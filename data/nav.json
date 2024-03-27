@@ -1,0 +1,126 @@
+{
+	"logo": "/uploads/logo-new.png",
+	"header": "/uploads/logo-sub-title-new.png",
+	"button": {
+		"link": "/persönliche-bedarfsanalyse",
+		"text": "Was MEIN Körper braucht"
+	},
+	"backgroundNavigation": "/uploads/header_background.jpg",
+	"shop": {
+		"active": true,
+		"link": "/shop/",
+		"text": "Shop",
+		"resale_area": {
+			"active": true,
+			"link": "/resale",
+			"text": "Händlerbereich"
+		}
+	},
+	"phone": {
+		"active": true,
+		"value": "+43 650 1234567"
+	},
+	"events": {
+		"active": true,
+		"link": "/termine",
+		"text": "Termine"
+	},
+	"imageItem": {
+		"active": false,
+		"link": "/",
+		"image": "/uploads/justforme.png",
+		"imageAlt": "Just for me"
+	},
+	"items": [
+		{
+			"link": null,
+			"text": "in guten Händen",
+			"items": [
+				{
+					"link": "/ernährung",
+					"text": "Ernährung",
+					"logo_lettering": false
+				},
+				{
+					"link": "/abnehmen",
+					"text": "Abnehmen",
+					"logo_lettering": false
+				},
+				{
+					"link": "/massagen",
+					"text": "Massagen",
+					"logo_lettering": false
+				},
+				{
+					"link": "/wellnesspakete",
+					"text": "Wellnesspakete",
+					"logo_lettering": false
+				}
+			]
+		},
+		{
+			"link": null,
+			"text": "Natur-Perlen",
+			"items": [
+				{
+					"link": "/powerhair",
+					"text": "POWERHAIR®",
+					"logo_lettering": true
+				},
+				{
+					"link": "/vital-gesund",
+					"text": "Vital & Gesund",
+					"logo_lettering": false
+				},
+				{
+					"link": "/gut-zu-wissen",
+					"text": "Gut zu wissen",
+					"logo_lettering": false
+				},
+				{
+					"link": "/faqs",
+					"text": "FAQ",
+					"logo_lettering": false
+				}
+			]
+		},
+		{
+			"link": null,
+			"text": "Erfolgsgeheimnis",
+			"items": [
+				{
+					"link": "/erfinderin",
+					"text": "Erfinderin"
+				},
+				{
+					"link": "/weltweit-einzigartig",
+					"text": "weltweit einzigartig"
+				},
+				{
+					"link": "/inhaltsstoffe",
+					"text": "Inhaltsstoffe"
+				},
+				{
+					"link": "/erfolgsecho",
+					"text": "Erfolgsecho"
+				}
+			]
+		}
+	],
+	"_inputs": {
+		"logo": {
+			"type": "image"
+		},
+		"header": {
+			"type": "image"
+		},
+		"backgroundNavigation": {
+			"type": "image"
+		},
+		"imageItem": {
+			"image": {
+				"type": "image"
+			}
+		}
+	}
+}
