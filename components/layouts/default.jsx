@@ -6,7 +6,6 @@ import data from '../../lib/data';
 import { useEffect, useState } from 'react';
 
 export default function DefaultLayout({ children, page }) {
-  const [init, setInit] = useState(false);
   const [unauth, setUnauth] = useState(true);
 
   const title = page?.data.title
@@ -21,25 +20,15 @@ export default function DefaultLayout({ children, page }) {
       const password =
         localStorage.getItem('pagePassword') || window.prompt('Passwort:', '');
 
-      if (password === '1234') {
+      if (password === 'tumorhorn') {
         setUnauth(false);
         localStorage.setItem('pagePassword', password);
       }
-
-      setInit(true);
     }
   }, []);
 
-  if (!init) {
-    return <div></div>;
-  }
-
   if (unauth) {
-    return (
-      <div>
-        <h1>Unauthorized</h1>
-      </div>
-    );
+    return <div></div>;
   }
 
   return (

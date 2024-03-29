@@ -16,4 +16,14 @@ body {
   color: $color-text;
   background: $color-white;
   margin: 0 !important;
+  cursor: none;
+}
+
+h1 {
+  font-size: $xl-font-size;
+  line-height: 1.2;
+  font-weight: $semibold-font-weight;
+  letter-spacing: $xl-letter-spacing;
+  color: $color-primary;
+  text-transform: uppercase;
 }

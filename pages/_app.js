@@ -1,10 +1,11 @@
 import '../styles/theme.scss';
 
 import { CloudCannonConnect } from '@cloudcannon/react-connector';
-import { Nunito } from 'next/font/google';
+import { Work_Sans } from 'next/font/google';
 import React, { useEffect } from 'react';
+import AnimatedCursor from 'react-animated-cursor';
 
-const nunito = Nunito({
+const worksans = Work_Sans({
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
 });
@@ -28,8 +29,65 @@ export default function App({ Component, pageProps }) {
   });
 
   return (
-    <div className={nunito.className}>
+    <div className={worksans.className}>
       <AppComponent {...pageProps} />
+      <AnimatedCursor
+        clickables={[
+          {
+            target: '#steps',
+            innerScale: 3,
+            outerScale: 1,
+            outerAlpha: 1,
+            innerStyle: {
+              backgroundColor: '#FFFFFF',
+              mixBlendMode: 'exclusion',
+            },
+            outerStyle: {
+              backgroundColor: '#FFFFFF',
+              mixBlendMode: 'exclusion',
+            },
+          },
+          {
+            target: 'a',
+            innerScale: 0.5,
+            outerScale: 1,
+            outerAlpha: 1,
+            innerStyle: {
+              backgroundColor: '#d9c489',
+            },
+            outerStyle: {
+              backgroundColor: 'transparent',
+              mixBlendMode: 'exclusion',
+            },
+          },
+          {
+            target: 'button',
+            innerScale: 0.5,
+            outerScale: 1,
+            outerAlpha: 1,
+            innerStyle: {
+              backgroundColor: '#d9c489',
+            },
+            outerStyle: {
+              backgroundColor: 'transparent',
+              mixBlendMode: 'exclusion',
+            },
+          },
+        ]}
+        color='#d9c489'
+        innerSize={20}
+        outerSize={30}
+        innerScale={2}
+        outerScale={1.5}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: '#d9c489',
+        }}
+        outerStyle={{
+          backgroundColor: 'transparent',
+        }}
+      />
     </div>
   );
 }
