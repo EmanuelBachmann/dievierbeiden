@@ -28,7 +28,7 @@ export default function DefaultLayout({ children, page }) {
   }, []);
 
   if (unauth) {
-    return <div></div>;
+    return;
   }
 
   return (
