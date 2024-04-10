@@ -76,10 +76,10 @@
       div.content p {
         color: $color-white;
         font-weight: $regular-font-weight;
-        font-size: $lg-font-size;
+        font-size: $md-font-size;
 
         @include media-breakpoint-down-md {
-          font-size: $lg-mobile-font-size;
+          font-size: $md-mobile-font-size;
         }
       }
     }
