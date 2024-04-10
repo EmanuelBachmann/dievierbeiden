@@ -2,7 +2,7 @@ import '../styles/theme.scss';
 
 import { CloudCannonConnect } from '@cloudcannon/react-connector';
 import { Work_Sans } from 'next/font/google';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 
 const worksans = Work_Sans({
@@ -11,6 +11,14 @@ const worksans = Work_Sans({
 });
 
 export default function App({ Component, pageProps }) {
+  const [isTouchdevice, setIsTouchdevice] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsTouchdevice(window.matchMedia('(hover: none)').matches);
+    }
+  }, []);
+
   useEffect(() => {
     document.body.classList.add('loaded');
 
@@ -30,64 +38,52 @@ export default function App({ Component, pageProps }) {
 
   return (
     <div className={worksans.className}>
+      {!isTouchdevice && (
+        <AnimatedCursor
+          clickables={[
+            {
+              target: 'a',
+              innerScale: 0.5,
+              outerScale: 1,
+              outerAlpha: 1,
+              innerStyle: {
+                backgroundColor: '#d9c489',
+              },
+              outerStyle: {
+                backgroundColor: 'transparent',
+                mixBlendMode: 'exclusion',
+              },
+            },
+            {
+              target: 'button',
+              innerScale: 0.5,
+              outerScale: 1,
+              outerAlpha: 1,
+              innerStyle: {
+                backgroundColor: '#d9c489',
+              },
+              outerStyle: {
+                backgroundColor: 'transparent',
+                mixBlendMode: 'exclusion',
+              },
+            },
+          ]}
+          color='#d9c489'
+          innerSize={20}
+          outerSize={30}
+          innerScale={2}
+          outerScale={1.5}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: '#d9c489',
+          }}
+          outerStyle={{
+            backgroundColor: 'transparent',
+          }}
+        />
+      )}
       <AppComponent {...pageProps} />
-      <AnimatedCursor
-        clickables={[
-          {
-            target: '#steps',
-            innerScale: 3,
-            outerScale: 1,
-            outerAlpha: 1,
-            innerStyle: {
-              backgroundColor: '#FFFFFF',
-              mixBlendMode: 'exclusion',
-            },
-            outerStyle: {
-              backgroundColor: '#FFFFFF',
-              mixBlendMode: 'exclusion',
-            },
-          },
-          {
-            target: 'a',
-            innerScale: 0.5,
-            outerScale: 1,
-            outerAlpha: 1,
-            innerStyle: {
-              backgroundColor: '#d9c489',
-            },
-            outerStyle: {
-              backgroundColor: 'transparent',
-              mixBlendMode: 'exclusion',
-            },
-          },
-          {
-            target: 'button',
-            innerScale: 0.5,
-            outerScale: 1,
-            outerAlpha: 1,
-            innerStyle: {
-              backgroundColor: '#d9c489',
-            },
-            outerStyle: {
-              backgroundColor: 'transparent',
-              mixBlendMode: 'exclusion',
-            },
-          },
-        ]}
-        color='#d9c489'
-        innerSize={20}
-        outerSize={30}
-        innerScale={2}
-        outerScale={1.5}
-        outerAlpha={0}
-        hasBlendMode={true}
-        innerStyle={{
-          backgroundColor: '#d9c489',
-        }}
-        outerStyle={{
-          backgroundColor: 'transparent',
-        }}
-      />
     </div>
   );
 }
