@@ -6,7 +6,7 @@ import data from '../../lib/data';
 import { useEffect, useState } from 'react';
 
 export default function DefaultLayout({ children, page }) {
-  const [unauth, setUnauth] = useState(true);
+  // const [unauth, setUnauth] = useState(true);
 
   const title = page?.data.title
     ? `${page.data.title} | ${data.site.site_short_title}`
@@ -15,21 +15,21 @@ export default function DefaultLayout({ children, page }) {
   const image = page?.data.seo?.feature_image || data.site.image;
   const image_alt = page?.data.seo?.feature_image_alt || data.site.image_alt;
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const password =
-        localStorage.getItem('pagePassword') || window.prompt('Passwort:', '');
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     const password =
+  //       localStorage.getItem('pagePassword') || window.prompt('Passwort:', '');
 
-      if (password === 'tumorhorn') {
-        setUnauth(false);
-        localStorage.setItem('pagePassword', password);
-      }
-    }
-  }, []);
+  //     if (password === 'tumorhorn') {
+  //       setUnauth(false);
+  //       localStorage.setItem('pagePassword', password);
+  //     }
+  //   }
+  // }, []);
 
-  if (unauth) {
-    return;
-  }
+  // if (unauth) {
+  //   return;
+  // }
 
   return (
     <>
