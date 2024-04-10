@@ -19,18 +19,27 @@
     background-image: var(--var-hero-background-img-mobile);
   }
 
+  @include media-breakpoint-down-sm {
+    background-image: none;
+  }
+
   &-container {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
 
+    @include media-breakpoint-down-sm {
+      background: none;
+    }
+
     > div {
       padding: $base-spacing;
     }
 
     &-header {
-      padding-bottom: 0;
+      padding-bottom: 0 !important;
+
       img {
         max-height: 125px;
       }
@@ -38,6 +47,37 @@
       @include media-breakpoint-down-md {
         display: flex;
         justify-content: center;
+      }
+
+      @include media-breakpoint-down-sm {
+        background-color: black;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+    }
+
+    .home-hero-mobile-background {
+      flex: 1;
+      display: flex;
+      padding: 0 !important;
+
+      .home-hero-mobile-overlay {
+        flex: 1;
+        display: flex;
+      }
+
+      @include media-breakpoint-down-sm {
+        background-image: var(--var-hero-background-img-mobile);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        position: relative;
+
+        .home-hero-mobile-overlay {
+          background: rgba(0, 0, 0, 0.7);
+          padding: $base-spacing;
+        }
       }
     }
 

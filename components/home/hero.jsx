@@ -15,6 +15,53 @@ export default function Hero({ block, dataBinding }) {
     };
   }, [block.background_image]);
 
+  const buildHeader = () => {
+    return (
+      <div className='home-hero-container-header'>
+        <img src={data.navigation.logo}></img>
+      </div>
+    );
+  };
+
+  const buildContent = () => {
+    return (
+      <div className='home-hero-container-content'>
+        <p className='h3'>{block.pre_title}</p>
+        <h1>{block.title}</h1>
+        <div
+          className='content'
+          dangerouslySetInnerHTML={{
+            __html: md.render(block.content),
+          }}
+        ></div>
+      </div>
+    );
+  };
+
+  const buildFooter = () => {
+    return (
+      <div className='home-hero-container-footer'>
+        <div className='container-md'>
+          <a href={`mailto:${data.footer.email}`}>
+            <i className='fa-solid fa-phone'></i>
+            <span>{data.footer.email}</span>
+          </a>
+          <a href={`tel:${data.footer.phone}`}>
+            <i className='fa-solid fa-envelope'></i>
+            <span>{data.footer.phone}</span>
+          </a>
+          <a
+            href={`https://instagram.com/${data.footer.instagram}`}
+            target='_blank'
+          >
+            <i className='fa-brands fa-instagram'></i>
+            <span>{data.footer.instagram}</span>
+          </a>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section
       className={`home-hero  ${init ? 'initialized' : ''}`}
@@ -25,35 +72,11 @@ export default function Hero({ block, dataBinding }) {
       }}
     >
       <div className='home-hero-container'>
-        <div className='home-hero-container-header'>
-          <img src={data.navigation.logo}></img>
+        {buildHeader()}
+        <div className='home-hero-mobile-background'>
+          <div className='home-hero-mobile-overlay'>{buildContent()}</div>
         </div>
-        <div className='home-hero-container-content'>
-          <p className='h3'>{block.pre_title}</p>
-          <h1>{block.title}</h1>
-          <div
-            className='content'
-            dangerouslySetInnerHTML={{
-              __html: md.render(block.content),
-            }}
-          ></div>
-        </div>
-        <div className='home-hero-container-footer'>
-          <div className='container-md'>
-            <a href={`mailto:${data.footer.email}`}>
-              <i className='fa-solid fa-phone'></i>
-              <span>{data.footer.email}</span>
-            </a>
-            <a href={`tel:${data.footer.phone}`}>
-              <i className='fa-solid fa-envelope'></i>
-              <span>{data.footer.phone}</span>
-            </a>
-            <a href={`https://instagram.com/${data.footer.instagram}`} target='_blank'>
-              <i className='fa-brands fa-instagram'></i>
-              <span>{data.footer.instagram}</span>
-            </a>
-          </div>
-        </div>
+        {buildFooter()}
       </div>
     </section>
   );
