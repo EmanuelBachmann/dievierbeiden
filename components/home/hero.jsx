@@ -48,7 +48,7 @@ export default function Hero({ block, dataBinding }) {
               <i className='fa-solid fa-envelope'></i>
               <span>{data.footer.phone}</span>
             </a>
-            <a href={data.footer.instagram} target='_blank'>
+            <a href={`https://instagram.com/${data.footer.instagram}`} target='_blank'>
               <i className='fa-brands fa-instagram'></i>
               <span>{data.footer.instagram}</span>
             </a>
