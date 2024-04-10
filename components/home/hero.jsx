@@ -43,11 +43,11 @@ export default function Hero({ block, dataBinding }) {
       <div className='home-hero-container-footer'>
         <div className='container-md'>
           <a href={`mailto:${data.footer.email}`}>
-            <i className='fa-solid fa-phone'></i>
+            <i className='fa-solid fa-envelope'></i>
             <span>{data.footer.email}</span>
           </a>
           <a href={`tel:${data.footer.phone}`}>
-            <i className='fa-solid fa-envelope'></i>
+            <i className='fa-solid fa-phone'></i>
             <span>{data.footer.phone}</span>
           </a>
           <a

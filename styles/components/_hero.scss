@@ -139,13 +139,12 @@
           flex-direction: row;
           align-items: center;
           text-decoration: none;
+          color: $color-white;
 
           i {
-            font-size: 30px;
+            font-size: $md-mobile-font-size;
             margin-right: 10px;
           }
-
-          color: $color-white;
         }
 
         @include media-breakpoint-only-sm {
@@ -155,7 +154,7 @@
             align-items: center;
 
             i {
-              font-size: 20px;
+              font-size: $md-mobile-font-size;
               margin-bottom: $xs-spacing;
               margin-right: 0;
             }
