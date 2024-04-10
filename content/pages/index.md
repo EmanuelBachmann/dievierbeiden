@@ -5,5 +5,5 @@ content_blocks:
     background_image: /uploads/die4beiden.jpg
     title: Die vier Beiden
     pre_title: Hier entsteht die Website von
-    content: 
+    content: 8 Musiker<br>Böhmisch \| Modern
 ---
