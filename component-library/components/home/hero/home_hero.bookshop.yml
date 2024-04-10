@@ -10,5 +10,8 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   background_image: ''
+  title: ''
+  pre_title: ''
+  content: ''
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

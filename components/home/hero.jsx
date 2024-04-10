@@ -24,16 +24,22 @@ export default function Hero({ block, dataBinding }) {
           <img src={data.navigation.logo}></img>
         </div>
         <div className='home-hero-container-content'>
-          <h1>Die vier beiden</h1>
+          <p className='h3'>{block.pre_title}</p>
+          <h1>{block.title}</h1>
+          <p className='h3'>
+            <span>8 Musiker</span>
+            <br />
+            <span>Böhmisch | Modern</span>
+          </p>
         </div>
         <div className='home-hero-container-footer'>
           <div className='container-md'>
             <a href={`mailto:${data.footer.email}`}>
-              <i class='fa-solid fa-phone'></i>
+              <i className='fa-solid fa-phone'></i>
               <span>{data.footer.email}</span>
             </a>
             <a href={`tel:${data.footer.phone}`}>
-              <i class='fa-solid fa-envelope'></i>
+              <i className='fa-solid fa-envelope'></i>
               <span>{data.footer.phone}</span>
             </a>
             <a href={data.footer.instagram} target='_blank'>
