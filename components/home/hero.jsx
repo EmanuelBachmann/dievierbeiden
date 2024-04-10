@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import data from '../../lib/data';
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt({ html: true });
 
 export default function Hero({ block, dataBinding }) {
   const [init, setInit] = useState(false);
@@ -26,11 +28,12 @@ export default function Hero({ block, dataBinding }) {
         <div className='home-hero-container-content'>
           <p className='h3'>{block.pre_title}</p>
           <h1>{block.title}</h1>
-          <p className='h3'>
-            <span>8 Musiker</span>
-            <br />
-            <span>Böhmisch | Modern</span>
-          </p>
+          <div
+            className='content'
+            dangerouslySetInnerHTML={{
+              __html: md.render(block.content),
+            }}
+          ></div>
         </div>
         <div className='home-hero-container-footer'>
           <div className='container-md'>

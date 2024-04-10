@@ -68,6 +68,16 @@
           max-width: 300px;
         }
       }
+
+      div.content p {
+        color: $color-white;
+        font-weight: $regular-font-weight;
+        font-size: $lg-font-size;
+
+        @include media-breakpoint-down-md {
+          font-size: $lg-mobile-font-size;
+        }
+      }
     }
 
     &-footer {
