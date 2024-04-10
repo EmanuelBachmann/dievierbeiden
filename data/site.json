@@ -5,6 +5,6 @@
     "description": "Willkommen bei DIE VIER BEIDEN – Ihrer böhmischen Brasspartie aus Vorarlberg! Unsere 8-köpfige Formation begeistert mit einem vielseitigen Repertoire aus traditionellen Klassikern und modernen Hits. Erleben Sie mit uns die perfekte Stimmung für jedes Fest.",
     "favicon_icon": "/uploads/favicon-32x32.png",
     "favicon_image": "/uploads/android-chrome-192x192.png",
-    "image": "/uploads/die4beiden.jpg",
+    "image": "https://die-vier-beiden.at/uploads/die4beiden.jpg",
     "image_alt": "Die vier Beiden"
 }
