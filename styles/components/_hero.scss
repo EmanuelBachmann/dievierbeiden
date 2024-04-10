@@ -15,6 +15,10 @@
   background-image: var(--var-hero-background-img);
   display: flex;
 
+  @include media-breakpoint-down-md {
+    background-image: var(--var-hero-background-img-mobile);
+  }
+
   &-container {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);

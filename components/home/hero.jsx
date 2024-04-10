@@ -19,7 +19,10 @@ export default function Hero({ block, dataBinding }) {
     <section
       className={`home-hero  ${init ? 'initialized' : ''}`}
       data-cms-bind={dataBinding}
-      style={{ '--var-hero-background-img': `url(${block.background_image})` }}
+      style={{
+        '--var-hero-background-img': `url(${block.background_image})`,
+        '--var-hero-background-img-mobile': `url(${block.background_image_mobile})`,
+      }}
     >
       <div className='home-hero-container'>
         <div className='home-hero-container-header'>
