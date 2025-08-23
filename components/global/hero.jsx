@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import MarkdownIt from 'markdown-it';
-import Image from 'next/image';
 const md = new MarkdownIt({ html: true });
 
 export default function Hero({ block, dataBinding }) {
@@ -21,7 +20,7 @@ export default function Hero({ block, dataBinding }) {
       data-cms-bind={dataBinding}
     >
       {/* <Image className='hero-image' src={block.background_image} alt={block.background_alt} /> */}
-      <Image className='hero-image hero-image-mobile' src={block.background_image_mobile} alt={block.background_alt} />
+      <img className='hero-image hero-image-mobile' src={block.background_image_mobile} alt={block.background_alt} />
     </section>
   );
 }
