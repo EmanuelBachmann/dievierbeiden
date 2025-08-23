@@ -50,6 +50,9 @@ module.exports = {
     background_image: {
       type: 'image',
     },
+    background_image_mobile: {
+      type: 'image',
+    },
     featured_image: {
       comment: 'Defaults to the image set in the Site SEO data file',
     },
