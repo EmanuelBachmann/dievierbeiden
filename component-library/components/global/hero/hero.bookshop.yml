@@ -2,17 +2,15 @@
 spec:
   structures:
     - content_blocks
-  label: Home Hero Carousel
-  description: Home Hero Carousel
-  icon: 'cottage'
-  tags: ['hero', 'carousel']
+  label: Hero
+  description: Hero
+  icon: 'image'
+  tags: ['hero']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   background_image: ''
   background_image_mobile: ''
-  title: ''
-  pre_title: ''
-  content: ''
+  background_alt: ''
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
