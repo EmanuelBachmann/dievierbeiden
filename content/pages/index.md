@@ -8,13 +8,5 @@ content_blocks:
   - _bookshop_name: global/introduction
     title: Die vier Beiden
     description: >-
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et
-
-
-      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-      sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-      dolore magna aliquyam erat
     image: /uploads/d4b-szene.jpg
 ---
