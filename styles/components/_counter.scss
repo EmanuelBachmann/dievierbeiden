@@ -1,0 +1,25 @@
+.counter {
+  background: $color-primary;
+  display: flex;
+  margin-top: $lg-spacing;
+  margin-bottom: $lg-spacing;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-item {
+    text-align: center;
+    margin-top: $md-spacing;
+    margin-bottom: $md-spacing;
+    font-weight: bolder;
+
+    &-number {
+      font-size: $xxl-mobile-font-size;
+    }
+  }
+}

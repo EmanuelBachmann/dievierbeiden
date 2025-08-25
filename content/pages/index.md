@@ -21,4 +21,12 @@ content_blocks:
       fpad lkasdjf lk
     image: /uploads/d4b-szene.jpg
     image_alt: Szene 2025
+  - _bookshop_name: global/counter
+    items:
+      - number: 9
+        text: Musiker
+      - number: 2022
+        text: gegründet
+      - number: 51
+        text: Auftritte gespielt
 ---
