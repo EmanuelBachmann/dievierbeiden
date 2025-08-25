@@ -70,8 +70,5 @@ module.exports = {
       comment:
         'When selected this removes the page from your sitemap and adds the noindex robots meta tag',
     },
-    content: {
-      type: 'markdown',
-    },
   },
 };
