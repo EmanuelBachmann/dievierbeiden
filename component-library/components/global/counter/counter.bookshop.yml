@@ -2,17 +2,15 @@
 spec:
   structures:
     - content_blocks
-  label: Introduction
-  description: Introduction
-  icon: 'title'
-  tags: ['introduction']
+  label: Counter
+  description: Counter
+  icon: 'numbers'
+  tags: ['counter']
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  title: ''
-  text_top: ''
-  text_bottom: ''
-  image: ''
-  image_alt: ''
+  items:
+    - number: ''
+      text: ''
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
