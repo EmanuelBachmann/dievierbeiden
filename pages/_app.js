@@ -1,11 +1,11 @@
 import '../styles/theme.scss';
 
 import { CloudCannonConnect } from '@cloudcannon/react-connector';
-import { Work_Sans } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import React, { useEffect, useState } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 
-const worksans = Work_Sans({
+const inter = Inter({
   weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
 });
@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }) {
   });
 
   return (
-    <div className={worksans.className}>
+    <div className={inter.className}>
       {!isTouchdevice && (
         <AnimatedCursor
           clickables={[

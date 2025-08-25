@@ -12,12 +12,12 @@ body:not(.loaded) * {
 body {
   font-size: $base-font-size;
   font-weight: $regular-font-weight;
-  letter-spacing: $base-letter-spacing;
+  // letter-spacing: $base-letter-spacing;
   color: $color-text;
   background: $color-white;
   margin: 0 !important;
 
-  section {
+  * {
     box-sizing: border-box;
   }
 }
@@ -39,7 +39,7 @@ h4,
 .h4 {
   line-height: 1.2;
   font-weight: $semibold-font-weight;
-  letter-spacing: $lg-letter-spacing;
+  // letter-spacing: $lg-letter-spacing;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
@@ -49,7 +49,8 @@ h1,
 .h1 {
   font-size: $xxl-font-size;
   color: $color-primary;
-  line-height: 1.1;
+  line-height: 1.05;
+  font-weight: bold;
 
   @include media-breakpoint-down-md {
     font-size: $xxl-mobile-font-size;

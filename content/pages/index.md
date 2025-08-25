@@ -7,14 +7,18 @@ content_blocks:
     background_image_alt: Die vier Beiden
   - _bookshop_name: global/introduction
     title: Die vier Beiden
-    description: >-
+    text_top: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
       nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
       fpad lkasdjf lk
-
-
+      
+      
       voluptua. At vero eos etLorem ipsum dolor sit amet. Lorem ipsum dolor sit
-      amet, consetetu sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-      ut labore edolore magna aliquyam erat asdk fnlknsd f
+      amet, consetetu sadipscing 
+    text_bottom: >-
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+      fpad lkasdjf lk
     image: /uploads/d4b-szene.jpg
+    image_alt: Szene 2025
 ---

@@ -1,5 +1,29 @@
 .introduction {
+  &-content {
+    background-color: white;
+    margin-top: -50px;
+    z-index: 10;
+    position: relative;
+    border-radius: $base-border-radius;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin: $base-spacing;
+    padding-top: $base-spacing;
+  }
+
+  &-text {
+    margin-top: $base-spacing;
+    margin-bottom: $base-spacing;
+
     p {
-        text-align: center;
+      text-align: center;
+
+      &:not(:first-of-type) {
+        margin-top: 10px;
+      }
     }
+  }
 }

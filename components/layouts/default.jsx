@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo';
 // import Footer from './footer';
 import data from '../../lib/data';
 import { useEffect, useState } from 'react';
+import Navigation from './navigation';
 
 export default function DefaultLayout({ children, page }) {
   // const [unauth, setUnauth] = useState(true);
@@ -80,7 +81,7 @@ export default function DefaultLayout({ children, page }) {
           },
         ]}
       />
-      {/* <Navigation /> */}
+      <Navigation />
       {children}
       {/* <Footer /> */}
     </>

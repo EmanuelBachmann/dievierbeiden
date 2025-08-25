@@ -53,7 +53,10 @@ module.exports = {
     background_image_mobile: {
       type: 'image',
     },
-    description: {
+    text_top: {
+      type: 'markdown'
+    },
+    text_bottom: {
       type: 'markdown'
     },
     featured_image: {
