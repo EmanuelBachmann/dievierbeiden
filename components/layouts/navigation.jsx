@@ -41,14 +41,17 @@ export default function Navigation() {
   return (
     <>
       <header>
-        <nav className={'navbar'} id='mainnavigationBar'>
+        <nav
+          className={`navbar ${isSticky || isOpen ? 'sticky' : ''} ${
+            wasOpend ? (isOpen ? 'open' : 'closed') : ''
+          }`}
+          id='mainnavigationBar'
+        >
           <div className='navbar-content'>
             <div className='navbar-row'>
               <img src={navigation.logo} alt='Die vier Beiden Logo' />
               <button
-                className={`burger-btn  ${
-                  wasOpend ? (isOpen ? 'active' : 'not-active') : ''
-                }`}
+                className={`burger-btn`}
                 type='button'
                 onClick={handleNavbarToggle}
               >
@@ -57,7 +60,9 @@ export default function Navigation() {
                 <span></span>
               </button>
             </div>
-            <div className={`navbar-shadow ${isSticky || isOpen ? 'active' : ''}`}></div>
+            <div className='navbar-open-content'>
+            </div>
+            <div className={`navbar-shadow `}></div>
           </div>
         </nav>
       </header>
