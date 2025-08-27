@@ -29,4 +29,13 @@ content_blocks:
         text: gegründet
       - number: 51
         text: Auftritte gespielt
+  - _bookshop_name: global/members
+    title: 'Das sind wird'
+    text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+      fpad lkasdjf lk'
+    members:
+      - name: Emanuel Bachmann
+        motto: Wein auf Bier, das rat ich dir - Bier auf Wein, das rat ich dir
+        image: /uploads/d4b-szene.jpg
 ---
