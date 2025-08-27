@@ -36,6 +36,6 @@ content_blocks:
       fpad lkasdjf lk'
     members:
       - name: Emanuel Bachmann
-        motto: Wein auf Bier, das rat ich dir - Bier auf Wein, das rat ich dir
+        instrument: Trompete
         image: /uploads/d4b-szene.jpg
 ---
