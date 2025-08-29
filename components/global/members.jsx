@@ -120,7 +120,7 @@ export default function Members({ block, dataBinding }) {
               }}
               aria-label='Previous'
             >
-              <i class='fa-solid fa-chevron-left'></i>
+              <i aria-hidden className='fa-solid fa-chevron-left'></i>
             </button>
             <button
               onClick={() => {
@@ -129,7 +129,7 @@ export default function Members({ block, dataBinding }) {
               }}
               aria-label='Next'
             >
-              <i class='fa-solid fa-chevron-right'></i>
+              <i aria-hidden className='fa-solid fa-chevron-right'></i>
             </button>
           </footer>
         </div>

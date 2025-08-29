@@ -20,9 +20,8 @@
     display: flex;
     flex-direction: column;
     place-items: center;
-    transition: transform 0.3s ease-in-out, opacity 0.3s;
     pointer-events: none;
-    transition: z-index 0s ease 0.3s;
+    transition: z-index 0.2s ease 0.3s;
   }
 
   @keyframes flyOut {
@@ -45,17 +44,17 @@
       transform: translateX(150%);
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(0%);
     }
   }
 
 
   .members-card.fly-in {
-    animation: flyIn 0.6s ease forwards;
+    animation: flyIn 0.8s ease-in-out forwards;
   }
 
   .members-card.fly-out {
-    animation: flyOut 0.6s ease forwards;
+    animation: flyOut 0.8s ease-in-out forwards;
   }
 
 
