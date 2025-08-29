@@ -30,7 +30,7 @@ content_blocks:
       - number: 51
         text: Auftritte gespielt
   - _bookshop_name: global/members
-    title: Das sind wird
+    title: Das sind wir
     text: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
       nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd

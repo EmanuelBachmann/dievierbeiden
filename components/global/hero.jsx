@@ -21,6 +21,7 @@ export default function Hero({ block, dataBinding }) {
     >
       {/* <Image className='hero-image' src={block.background_image} alt={block.background_alt} /> */}
       <img className='hero-image hero-image-mobile' src={block.background_image_mobile} alt={block.background_alt} />
+      <div className='hero-bottom-gradient'/>
     </section>
   );
 }
