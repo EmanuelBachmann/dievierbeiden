@@ -63,4 +63,27 @@ content_blocks:
       - name: David Beinat
         instrument: Posaune / Tenorhorn
         image: /uploads/David.jpg
+  - _bookshop_name: global/dates
+    title: Termine
+    text: >-
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+    icon: /uploads/d4b_logo_quadrat_gold_transparent_icon.png
+    dates:
+      - title: 'Musikhock'
+        date: '30.August ab 20 Uhr'
+        location: 'Dornirn, Rohrbach'
+        is_bohemian: false
+        link: 'https://google.com'
+      - title: 'Alberschwende Frühshoppen'
+        date: '7.September ab 11 Uhr'
+        location: 'Alberschwende'
+        is_bohemian: true
+      - title: 'Klosterfest Stadtmusik'
+        date: '19.September ab 16 Uhr'
+        location: 'Dornbirn Kloster'
+        is_bohemian: true
+      - title: 'Bockbierfest Frastanz'
+        date: '20.September ab 20 Uhr'
+        location: 'Frastanz'
+        link: 'https://google.com'
 ---
