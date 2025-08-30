@@ -8,6 +8,10 @@ body:not(.loaded) * {
   animation: none !important;
 }
 
+body, html{
+  overflow-x: hidden;
+}
+
 /*Font */
 body {
   font-size: $base-font-size;
@@ -17,7 +21,6 @@ body {
   background: $color-white;
   margin: 0 !important;
   overflow-x: auto;
-  overflow-y: hidden;
   max-width: 100vw;
   
   * {
