@@ -24,20 +24,21 @@ export default function Members({ block, dataBinding }) {
   useEffect(() => {
     let interval;
 
-    if (automaticMode) {
+    if (automaticMode && members.length > 0) {
       interval = setInterval(() => {
         nextCard();
       }, 4000);
     }
 
     return () => clearInterval(interval);
-  }, [automaticMode]);
+  }, [automaticMode, members.length]);
 
   const nextCard = () => {
     setActiveState((as) => {
       const i = as.activeIndex;
       const activeIndex = (i + 1) % members.length;
       const previousIndex = (activeIndex - 1 + members.length) % members.length;
+
       return {
         direction: 'next',
         activeIndex: activeIndex,
@@ -48,8 +49,10 @@ export default function Members({ block, dataBinding }) {
 
   const prevCard = () => {
     setActiveState((as) => {
+      const i = as.activeIndex;
       const activeIndex = (i - 1 + members.length) % members.length;
       const previousIndex = (activeIndex - 1 + members.length) % members.length;
+
       return {
         direction: 'prev',
         activeIndex: activeIndex,
