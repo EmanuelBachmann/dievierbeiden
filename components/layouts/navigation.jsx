@@ -47,6 +47,7 @@ export default function Navigation() {
           }`}
           id='mainnavigationBar'
         >
+          <div className={`navbar-shadow`}></div>
           <div className='navbar-content'>
             <div className='navbar-row'>
               <img src={navigation.logo} alt='Die vier Beiden Logo' />
@@ -61,8 +62,38 @@ export default function Navigation() {
               </button>
             </div>
             <div className='navbar-open-content'>
+              <div className='navbar-nav-items'>
+                <div className='navbar-nav-item'>
+                  <a>Die vier Beiden</a>
+                </div>
+                <div className='navbar-nav-item'>
+                  <a>Über uns</a>
+                </div>
+                <div className='navbar-nav-item'>
+                  <a>Termine</a>
+                </div>
+                <div className='navbar-nav-item'>
+                  <a>Böhmisch</a>
+                </div>
+                <div className='navbar-nav-item'>
+                  <a>Kontakt</a>
+                </div>
+              </div>
+              <div className='navbar-nav-footer'>
+                <a href={`mailto:${data.footer.email}`}>
+                  <i className='fa-solid fa-envelope'></i>
+                </a>
+                <a href={`tel:${data.footer.phone}`}>
+                  <i className='fa-solid fa-phone'></i>
+                </a>
+                <a
+                  href={`https://instagram.com/${data.footer.instagram}`}
+                  target='_blank'
+                >
+                  <i className='fa-brands fa-instagram'></i>
+                </a>
+              </div>
             </div>
-            <div className={`navbar-shadow `}></div>
           </div>
         </nav>
       </header>

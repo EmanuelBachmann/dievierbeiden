@@ -6,11 +6,18 @@
   width: calc(100% - #{$sm-spacing} * 2);
   z-index: 100;
 
+  --height-container: 550px;
+  --height-fixed-row: 80px;
+
   &-content {
     padding: $sm-spacing;
     border-radius: $base-border-radius;
     height: fit-content;
     position: relative;
+    height: 100%;
+    max-height: var(--height-fixed-row);
+    overflow: hidden;
+    transition: 0.3s max-height ease-in-out;
   }
 
   &-shadow {
@@ -34,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: calc(100px - #{$sm-spacing} * 4);
+    height: calc(#{var(--height-fixed-row)} - #{$sm-spacing} * 2);
   }
 
   img {
@@ -70,14 +77,54 @@
   }
 
   &-open-content {
-    height: 400px;
-    max-height: 0px;
+    height: calc(#{var(--height-container)} - #{var(--height-fixed-row)});
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s max-height ease-in-out;
+
+    .navbar-nav-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      padding: $base-spacing;
+
+      .navbar-nav-item {
+        text-decoration: none;
+        text-align: center;
+        padding: $base-spacing 0;
+        width: 100%;
+        font-size: $md-mobile-font-size;
+        font-weight: 500;
+        &:not(:last-of-type) {
+            border-bottom: 2px solid $color-primary
+        }
+      }
+    }
+
+    .navbar-nav-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+
+      a {
+        margin: $base-spacing 0;
+        text-decoration: none;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px;
+        border: 2px solid $color-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        background: white;
+        color: $color-primary;
+      }
+    }
   }
 
   &.sticky {
@@ -87,8 +134,8 @@
   }
 
   &.open {
-    .navbar-open-content {
-      max-height: 400px;
+    .navbar-content {
+      max-height: var(--height-container);
     }
 
     .burger-btn {
