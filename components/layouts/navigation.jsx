@@ -44,7 +44,7 @@ export default function Navigation() {
         <nav
           className={`navbar ${isSticky || isOpen ? 'sticky' : ''} ${
             wasOpend ? (isOpen ? 'open' : 'closed') : ''
-          }`}
+          } ${!isSticky ? 'not-scrolled' : ''}`}
           id='mainnavigationBar'
         >
           <div className={`navbar-shadow`}></div>

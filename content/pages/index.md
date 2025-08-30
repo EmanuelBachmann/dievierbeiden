@@ -97,4 +97,9 @@ content_blocks:
     title: 'Folgen Sie uns schon?'
     instagram_url: 'https://instagram.com/die4beiden'
     facebook_url: 'https://www.facebook.com/p/Die-4-Beiden-61558468670246/'
+  - _bookshop_name: 'global/contact'
+    title: 'Kontakt'
+    text: >-
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+    contact_id: 14
 ---

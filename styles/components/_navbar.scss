@@ -99,7 +99,7 @@
         font-size: $md-mobile-font-size;
         font-weight: 500;
         &:not(:last-of-type) {
-            border-bottom: 2px solid $color-primary
+          border-bottom: 2px solid $color-primary;
         }
       }
     }
@@ -130,6 +130,12 @@
   &.sticky {
     .navbar-shadow {
       opacity: 1;
+    }
+  }
+
+  &.not-scrolled:not(.open) {
+    .navbar-shadow {
+      transition-delay: 0.3s;
     }
   }
 
