@@ -16,7 +16,9 @@ body {
   color: $color-text;
   background: $color-white;
   margin: 0 !important;
-
+  overflow-x: auto;
+  overflow-y: hidden;
+  
   * {
     box-sizing: border-box;
   }
