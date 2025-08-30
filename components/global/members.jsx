@@ -48,7 +48,6 @@ export default function Members({ block, dataBinding }) {
 
   const prevCard = () => {
     setActiveState((as) => {
-      const i = as.activeIndex;
       const activeIndex = (i - 1 + members.length) % members.length;
       const previousIndex = (activeIndex - 1 + members.length) % members.length;
       return {
@@ -93,7 +92,7 @@ export default function Members({ block, dataBinding }) {
                   zIndex: getZIndex(index),
                 }}
               >
-                <div className='members-card-container'>
+                {/* <div className='members-card-container'> */}
                   <img
                     className='members-card-img'
                     src={member.image}
@@ -106,7 +105,7 @@ export default function Members({ block, dataBinding }) {
                       {member.instrument}
                     </p>
                   </div>
-                </div>
+                {/* </div> */}
               </article>
             );
           })}

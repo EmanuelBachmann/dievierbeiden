@@ -16,12 +16,22 @@
   }
 
   .members-card {
+    width: 250px;
+    max-width: calc(100% - #{$base-spacing}* 4);
+    height: 100%;
     grid-area: 1/1;
     display: flex;
     flex-direction: column;
     place-items: center;
     pointer-events: none;
+    overflow: hidden;
+    background-color: white;
+    rotate: var(--angle, 0deg);
+    border-radius: 10px;
+    border: 5px solid $color-primary;
+    box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
     transition: z-index 0.2s ease 0.3s;
+    margin: auto;
   }
 
   @keyframes flyOut {
