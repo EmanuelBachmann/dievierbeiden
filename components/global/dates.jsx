@@ -6,7 +6,6 @@ export default function Dates({ block, dataBinding }) {
       <div className='container'>
         <h2 className='dates-title'>{block.title}</h2>
         <p className='dates-text'>{block.text}</p>
-
         <div className='dates-items'>
           {block.dates.map((date, index) => {
             const isRight = index % 2 == 0;
@@ -49,7 +48,7 @@ export default function Dates({ block, dataBinding }) {
                       ></div>
                     </div>
                     <div className='dates-item-line-container line-lg'>
-                      <hr />
+                      <div className='line'></div>
                     </div>
                     <div className='dates-item-line-container line-sm'>
                       <div

@@ -14,7 +14,7 @@ content_blocks:
 
 
       voluptua. At vero eos etLorem ipsum dolor sit amet. Lorem ipsum dolor sit
-      amet, consetetu sadipscing 
+      amet, consetetu sadipscing
     text_bottom: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
       nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
@@ -63,6 +63,13 @@ content_blocks:
       - name: David Beinat
         instrument: Posaune / Tenorhorn
         image: /uploads/David.jpg
+  - _bookshop_name: global/bohemian
+    title: 'Böhmische Formation'
+    text: >-
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+    background_image: '/uploads/die4beiden_mobile.jpg'
+    button_text: 'Buchen'
+    button_link: '#'
   - _bookshop_name: global/dates
     title: Termine
     text: >-

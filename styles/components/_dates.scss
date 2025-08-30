@@ -1,6 +1,6 @@
 .dates {
-  margin-top: $md-spacing;
-  margin-bottom: $md-spacing;
+  margin-top: $lg-spacing;
+  margin-bottom: $lg-spacing;
 
   .dates-text {
     margin-top: $base-spacing;
@@ -128,11 +128,11 @@
         &.line-lg {
           flex: 1;
 
-          hr {
+          .line {
             border-top: var(--timeline-thickness) solid $color-primary;
-            margin: 0;
-            top: calc(var(--timeline-radius) - var(--timeline-thickness));
-            position: relative;
+            bottom: 50%;
+            width: 100%;
+            position: absolute;
           }
         }
       }

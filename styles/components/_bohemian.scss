@@ -1,0 +1,36 @@
+.bohemian {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  position: relative;
+  display: flex;
+  margin-top: $lg-spacing;
+  margin-bottom: $lg-spacing;
+
+  .bohemian-overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .bohemian-content {
+    margin-top: $lg-spacing;
+    margin-bottom: $lg-spacing;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin-top: $sm-spacing;
+      color: white;
+      margin-bottom: $md-spacing;
+    }
+
+    a {
+      padding: $base-spacing;
+      color: white;
+      border-radius: 15px;
+      border: 1px solid white;
+    }
+  }
+}
