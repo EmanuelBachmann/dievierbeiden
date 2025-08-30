@@ -9,10 +9,10 @@ export default function Introduction({ block, dataBinding }) {
         <p className='contact-text'>{block.text}</p>
         <div className='contact-button-row'>
           <a href={`mailto:${data.footer.email}`}>
-            <i className='fa-solid fa-envelope'></i>
+            <i aria-hidden className='fa-solid fa-envelope'></i>
           </a>
           <a href={`tel:${data.footer.phone}`}>
-            <i className='fa-solid fa-phone'></i>
+            <i aria-hidden className='fa-solid fa-phone'></i>
           </a>
         </div>
 

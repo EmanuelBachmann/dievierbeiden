@@ -1,6 +1,16 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function Dates({ block, dataBinding }) {
+  const cardVariants = {
+    hiddenLeft: { x: -100, opacity: 0 },
+    hiddenRight: { x: 100, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.4, ease: 'easeOut' },
+    },
+  };
   return (
     <section className='dates' data-cms-bind={dataBinding}>
       <div className='container'>
@@ -12,9 +22,8 @@ export default function Dates({ block, dataBinding }) {
             const isFirst = index == 0;
             const isLast = index == block.dates.length - 1;
             return (
-              <>
+              <div key={index}>
                 <div
-                  key={'date-' + index}
                   className={`dates-item ${
                     isRight ? 'dates-item-left' : 'dates-item-right'
                   }`}
@@ -26,7 +35,14 @@ export default function Dates({ block, dataBinding }) {
                   >
                     <img src={block.icon} alt='Logo Datum' />
                   </div>
-                  <div className='dates-item-content-container'>
+                  <motion.div
+                    // key={'motion-' + index}
+                    variants={cardVariants}
+                    initial={isRight ? 'hiddenRight' : 'hiddenLeft'}
+                    whileInView='visible'
+                    viewport={{ once: true, amount: 0.4 }}
+                    className='dates-item-content-container'
+                  >
                     <h3>{date.title}</h3>
                     <div className='dates-item-content-icon-container'>
                       <i aria-hidden className='fa-solid fa-calendar'></i>
@@ -36,7 +52,7 @@ export default function Dates({ block, dataBinding }) {
                       <i aria-hidden className='fa-solid fa-location-dot'></i>
                       <p>{date.location}</p>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
                 {!isLast && (
                   <div className='dates-item-line'>
@@ -59,7 +75,7 @@ export default function Dates({ block, dataBinding }) {
                     </div>
                   </div>
                 )}
-              </>
+              </div>
             );
           })}
         </div>

@@ -81,16 +81,16 @@ export default function Navigation() {
               </div>
               <div className='navbar-nav-footer'>
                 <a href={`mailto:${data.footer.email}`}>
-                  <i className='fa-solid fa-envelope'></i>
+                  <i aria-hidden className='fa-solid fa-envelope'></i>
                 </a>
                 <a href={`tel:${data.footer.phone}`}>
-                  <i className='fa-solid fa-phone'></i>
+                  <i aria-hidden className='fa-solid fa-phone'></i>
                 </a>
                 <a
                   href={`https://instagram.com/${data.footer.instagram}`}
                   target='_blank'
                 >
-                  <i className='fa-brands fa-instagram'></i>
+                  <i aria-hidden className='fa-brands fa-instagram'></i>
                 </a>
               </div>
             </div>
