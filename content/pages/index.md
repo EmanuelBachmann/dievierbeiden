@@ -67,7 +67,7 @@ content_blocks:
     title: 'Böhmische Formation'
     text: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
-    background_image: '/uploads/die4beiden_mobile.jpg'
+    background_image: '/uploads/kilbi_mobile.jpg'
     button_text: 'Buchen'
     button_link: '#'
   - _bookshop_name: global/dates
@@ -102,4 +102,24 @@ content_blocks:
     text: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
     contact_id: 14
+  - _bookshop_name: 'global/gallery'
+    images:
+      - image: /uploads/szene_black_white.jpg
+        image_mobile: /uploads/szene_black_white_mobile.jpg
+        title: 'Szene Openair'
+      - image: /uploads/rohrbach.jpg
+        image_mobile: /uploads/rohrbach_mobile.jpg
+        title: 'Rohrbacher Musighock'
+      - image: /uploads/wagner_firmenfest.jpg
+        image_mobile: /uploads/wagner_firmenfest_mobile.jpg
+        title: 'Wagner Sommerfest'
+      - image: /uploads/nenzing_jubilaeum.jpg
+        image_mobile: /uploads/nenzing_jubilaeum_mobile.jpg
+        title: '100 Jahre BMG Nenzing'
+  - _bookshop_name: 'global/setlist'
+    title: 'Setlist'
+    text: >-
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+    button_text: 'Download'
+    setlist: /uploads/nenzing_jubilaeum_mobile.jpg
 ---
