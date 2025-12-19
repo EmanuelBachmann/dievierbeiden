@@ -2,7 +2,11 @@ import React from 'react';
 
 export default function Counter({ block, dataBinding }) {
   return (
-    <section className='socialmedia' data-cms-bind={dataBinding}>
+    <section
+      className='socialmedia'
+      data-cms-bind={dataBinding}
+      id={block.anchor}
+    >
       <div className='container socialmedia-container'>
         <h2>{block.title}</h2>
         <div className='socialmedia-row'>

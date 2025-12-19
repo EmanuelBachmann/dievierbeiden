@@ -3,7 +3,11 @@ import data from '../../lib/data';
 
 export default function Setlist({ block, dataBinding }) {
   return (
-    <section className='setlist container' data-cms-bind={dataBinding}>
+    <section
+      className='setlist container'
+      data-cms-bind={dataBinding}
+      id={block.anchor}
+    >
       <h2>{block.title}</h2>
       <p className='setlist-text'>{block.text}</p>
       <div className='setlist-button-row'>

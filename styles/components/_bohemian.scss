@@ -8,6 +8,7 @@
   display: flex;
   margin-top: $lg-spacing;
   margin-bottom: $lg-spacing;
+  scroll-margin-top: $scroll-offset;
 
   .bohemian-overlay {
     background: rgba(0, 0, 0, 0.6);

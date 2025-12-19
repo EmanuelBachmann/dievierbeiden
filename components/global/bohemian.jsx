@@ -8,6 +8,7 @@ export default function Bohemian({ block, dataBinding }) {
       className={`bohemian`}
       style={{ '--background-image': `url(${block.background_image})` }}
       data-cms-bind={dataBinding}
+      id={block.anchor}
     >
       <div className='bohemian-overlay'>
         <div className='container'>

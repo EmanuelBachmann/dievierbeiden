@@ -12,8 +12,8 @@ export default function Dates({ block, dataBinding }) {
     },
   };
   return (
-    <section className='dates' data-cms-bind={dataBinding}>
-      <div className='container'>
+    <section className='dates' data-cms-bind={dataBinding} id={block.anchor}>
+      <div className='container dates-container'>
         <h2 className='dates-title'>{block.title}</h2>
         <p className='dates-text'>{block.text}</p>
         <div className='dates-items'>

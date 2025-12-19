@@ -38,6 +38,20 @@ export default function Navigation() {
     setIsOpen(!isOpen);
   };
 
+  function scrollTo(id) {
+    console.log(id);
+    if (typeof document === 'undefined') return;
+
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    handleNavbarToggle();
+    el.scrollIntoView({ behavior: 'smooth' });
+
+    // remove hash from URL without reloading
+    history.replaceState(null, '', window.location.pathname);
+  }
+
   return (
     <>
       <header>
@@ -64,19 +78,15 @@ export default function Navigation() {
             <div className='navbar-open-content'>
               <div className='navbar-nav-items'>
                 <div className='navbar-nav-item'>
-                  <a>Die vier Beiden</a>
-                </div>
-                <div className='navbar-nav-item'>
-                  <a>Über uns</a>
-                </div>
-                <div className='navbar-nav-item'>
-                  <a>Termine</a>
-                </div>
-                <div className='navbar-nav-item'>
-                  <a>Böhmisch</a>
-                </div>
-                <div className='navbar-nav-item'>
-                  <a>Kontakt</a>
+                  {navigation.items.map((navItem, key) => (
+                    <div className='navbar-nav-item' key={key}>
+                      <button
+                        onClick={() => scrollTo(navItem.anchor)}
+                      >
+                        {navItem.title}
+                      </button>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className='navbar-nav-footer'>

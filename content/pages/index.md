@@ -5,6 +5,7 @@ content_blocks:
     background_image: /uploads/d4b-hero.jpg
     background_image_mobile: /uploads/d4b-hero-mobile-xl.jpg
     background_image_alt: Die vier Beiden
+    anchor: ''
   - _bookshop_name: global/introduction
     title: Die vier Beiden
     text_top: >-
@@ -21,6 +22,7 @@ content_blocks:
       fpad lkasdjf lk
     image: /uploads/d4b-szene.jpg
     image_alt: Szene 2025
+    anchor: 'die_vier_beiden'
   - _bookshop_name: global/counter
     items:
       - number: 9
@@ -29,6 +31,7 @@ content_blocks:
         text: gegründet
       - number: 51
         text: Auftritte gespielt
+    anchor: 'fakten'
   - _bookshop_name: global/members
     title: Das sind wir
     text: >-
@@ -63,6 +66,7 @@ content_blocks:
       - name: David Beinat
         instrument: Posaune / Tenorhorn
         image: /uploads/David.jpg
+    anchor: 'das_sind_wir'
   - _bookshop_name: global/bohemian
     title: 'Böhmische Formation'
     text: >-
@@ -70,6 +74,7 @@ content_blocks:
     background_image: '/uploads/kilbi_mobile.jpg'
     button_text: 'Buchen'
     button_link: '#'
+    anchor: 'boehmisch'
   - _bookshop_name: global/dates
     title: Termine
     text: >-
@@ -93,15 +98,18 @@ content_blocks:
         date: '20.September ab 20 Uhr'
         location: 'Frastanz'
         link: 'https://google.com'
+    anchor: 'termine'
   - _bookshop_name: 'global/socialmedia'
     title: 'Folgen Sie uns schon?'
     instagram_url: 'https://instagram.com/die4beiden'
     facebook_url: 'https://www.facebook.com/p/Die-4-Beiden-61558468670246/'
+    anchor: 'socialmedia'
   - _bookshop_name: 'global/contact'
     title: 'Kontakt'
     text: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
     contact_id: 14
+    anchor: 'kontakt'
   - _bookshop_name: 'global/gallery'
     images:
       - image: /uploads/szene_black_white.jpg
@@ -116,10 +124,12 @@ content_blocks:
       - image: /uploads/nenzing_jubilaeum.jpg
         image_mobile: /uploads/nenzing_jubilaeum_mobile.jpg
         title: '100 Jahre BMG Nenzing'
+    anchor: 'gallerie'
   - _bookshop_name: 'global/setlist'
     title: 'Setlist'
     text: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
     button_text: 'Download'
-    setlist: /uploads/nenzing_jubilaeum_mobile.jpg
+    setlist: /uploads/d4b_setlist.PDF
+    anchor: 'setlist'
 ---
