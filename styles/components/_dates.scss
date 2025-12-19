@@ -1,146 +1,150 @@
 .dates {
   margin-top: $lg-spacing;
   margin-bottom: $lg-spacing;
-  overflow: hidden;
+  scroll-margin-top: $scroll-offset;
 
-  .dates-text {
-    margin-top: $base-spacing;
-    margin-bottom: $base-spacing;
-  }
+  .dates-container {
+    overflow: hidden;
 
-  .dates-items {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+    .dates-text {
+      margin-top: $base-spacing;
+      margin-bottom: $base-spacing;
+    }
 
-    --icon-container-width: 40px;
-    --timeline-thickness: 2px;
-    --timeline-radius: 15px;
-
-    .dates-item {
+    .dates-items {
+      display: flex;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      text-align: start !important;
+      flex-direction: column;
 
-      .dates-item-node-container {
-        width: var(--icon-container-width);
-        display: inline-flex;
-        align-self: stretch;
-        align-items: center;
-        position: relative;
+      --icon-container-width: 40px;
+      --timeline-thickness: 2px;
+      --timeline-radius: 15px;
 
-        img {
+      .dates-item {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: start !important;
+
+        .dates-item-node-container {
           width: var(--icon-container-width);
-          height: var(--icon-container-width);
-          background-color: white;
-          z-index: 2;
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          border-left: var(--timeline-thickness) solid $color-primary;
-          left: 50%;
-          top: 0%;
-          height: 100%;
-          z-index: 1;
-        }
-
-        &.is-first::after {
-          top: 50% !important;
-          height: 50% !important;
-        }
-
-        &.is-last::after {
-          height: 50% !important;
-        }
-      }
-
-      .dates-item-content-container {
-        flex: 1;
-        min-height: 100px;
-        background: white;
-        box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
-        margin: $base-spacing;
-        padding: $base-spacing;
-        border-radius: 15px;
-
-        h3 {
-          margin-bottom: $sm-spacing;
-          text-transform: none;
-        }
-
-        .dates-item-content-icon-container {
-          display: flex;
-          flex-direction: row;
+          display: inline-flex;
+          align-self: stretch;
           align-items: center;
-          justify-content: center;
-          gap: 10px;
+          position: relative;
 
-          i {
-            color: $color-primary;
+          img {
+            width: var(--icon-container-width);
+            height: var(--icon-container-width);
+            background-color: white;
+            z-index: 2;
           }
 
-          &:not(:first-of-type) {
-            margin-top: $xs-spacing;
-          }
-        }
-      }
-    }
-    .dates-item-line {
-      display: flex;
-      flex-direction: row;
-
-      .dates-item-line-container {
-        height: calc(2 * var(--timeline-radius));
-        position: relative;
-        overflow: hidden;
-
-        &.line-sm {
-          width: var(--icon-container-width);
-
-          .line-corner {
-            border: var(--timeline-thickness) solid $color-primary;
-            width: 100%;
+          &::after {
+            content: '';
             position: absolute;
-            border-radius: var(--timeline-radius);
+            border-left: var(--timeline-thickness) solid $color-primary;
+            left: 50%;
+            top: 0%;
             height: 100%;
+            z-index: 1;
+          }
 
-            &.right-to-bottom {
-              left: 50%;
-              top: calc(50% - var(--timeline-thickness));
-            }
-            &.left-to-bottom {
-              left: calc(-50% + var(--timeline-thickness));
-              top: calc(50% - var(--timeline-thickness));
-            }
-            &.top-to-left {
-              left: calc(-50% + var(--timeline-thickness));
-              top: -50%;
-            }
-            &.top-to-right {
-              left: 50%;
-              top: -50%;
-            }
+          &.is-first::after {
+            top: 50% !important;
+            height: 50% !important;
+          }
+
+          &.is-last::after {
+            height: 50% !important;
           }
         }
 
-        &.line-lg {
+        .dates-item-content-container {
           flex: 1;
+          min-height: 100px;
+          background: white;
+          box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
+          margin: $base-spacing;
+          padding: $base-spacing;
+          border-radius: 15px;
 
-          .line {
-            border-top: var(--timeline-thickness) solid $color-primary;
-            bottom: 50%;
-            width: 100%;
-            position: absolute;
+          h3 {
+            margin-bottom: $sm-spacing;
+            text-transform: none;
+          }
+
+          .dates-item-content-icon-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            i {
+              color: $color-primary;
+            }
+
+            &:not(:first-of-type) {
+              margin-top: $xs-spacing;
+            }
           }
         }
       }
-    }
+      .dates-item-line {
+        display: flex;
+        flex-direction: row;
 
-    .dates-item-right {
-      flex-direction: row-reverse;
+        .dates-item-line-container {
+          height: calc(2 * var(--timeline-radius));
+          position: relative;
+          overflow: hidden;
+
+          &.line-sm {
+            width: var(--icon-container-width);
+
+            .line-corner {
+              border: var(--timeline-thickness) solid $color-primary;
+              width: 100%;
+              position: absolute;
+              border-radius: var(--timeline-radius);
+              height: 100%;
+
+              &.right-to-bottom {
+                left: 50%;
+                top: calc(50% - var(--timeline-thickness));
+              }
+              &.left-to-bottom {
+                left: calc(-50% + var(--timeline-thickness));
+                top: calc(50% - var(--timeline-thickness));
+              }
+              &.top-to-left {
+                left: calc(-50% + var(--timeline-thickness));
+                top: -50%;
+              }
+              &.top-to-right {
+                left: 50%;
+                top: -50%;
+              }
+            }
+          }
+
+          &.line-lg {
+            flex: 1;
+
+            .line {
+              border-top: var(--timeline-thickness) solid $color-primary;
+              bottom: 50%;
+              width: 100%;
+              position: absolute;
+            }
+          }
+        }
+      }
+
+      .dates-item-right {
+        flex-direction: row-reverse;
+      }
     }
   }
 }

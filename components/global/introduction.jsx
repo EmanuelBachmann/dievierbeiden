@@ -5,7 +5,11 @@ const md = new MarkdownIt({ html: true });
 
 export default function Introduction({ block, dataBinding }) {
   return (
-    <section className='introduction container' data-cms-bind={dataBinding}>
+    <section
+      className='introduction container'
+      data-cms-bind={dataBinding}
+      id={block.anchor}
+    >
       <div className='introduction-content'>
         <h1>{block.title}</h1>
         <div

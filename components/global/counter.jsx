@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 export default function Counter({ block, dataBinding }) {
   return (
-    <section className='counter' data-cms-bind={dataBinding}>
+    <section className='counter' data-cms-bind={dataBinding} id={block.anchor}>
       <div className='container counter-container'>
         {block.items.map((item, index) => {
           return (

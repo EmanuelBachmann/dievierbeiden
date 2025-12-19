@@ -8,6 +8,7 @@
   display: flex;
   margin-top: $lg-spacing;
   margin-bottom: $lg-spacing;
+  scroll-margin-top: $scroll-offset;
 
   .bohemian-overlay {
     background: rgba(0, 0, 0, 0.6);
@@ -26,11 +27,16 @@
       margin-bottom: $md-spacing;
     }
 
-    a {
+    button {
       padding: $sm-spacing $base-spacing;
       color: white;
       border-radius: 15px;
       border: 1px solid white;
+      background: none;
+      margin: 0;
+      font: inherit;
+      text-align: inherit;
+      cursor: pointer;
     }
   }
 }

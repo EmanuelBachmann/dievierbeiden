@@ -13,5 +13,6 @@ blueprint:
   text: ''
   button_text: ''
   setlist: ''
+  anchor: ''
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

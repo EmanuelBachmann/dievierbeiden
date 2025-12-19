@@ -18,10 +18,15 @@ export default function Hero({ block, dataBinding }) {
     <section
       className={`hero  ${init ? 'initialized' : ''}`}
       data-cms-bind={dataBinding}
+      id={block.anchor}
     >
       {/* <Image className='hero-image' src={block.background_image} alt={block.background_alt} /> */}
-      <img className='hero-image hero-image-mobile' src={block.background_image_mobile} alt={block.background_alt} />
-      <div className='hero-bottom-gradient'/>
+      <img
+        className='hero-image hero-image-mobile'
+        src={block.background_image_mobile}
+        alt={block.background_alt}
+      />
+      <div className='hero-bottom-gradient' />
     </section>
   );
 }

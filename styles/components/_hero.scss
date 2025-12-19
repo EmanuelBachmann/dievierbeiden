@@ -4,6 +4,8 @@
 
 .hero {
   position: relative;
+  scroll-margin-top: $scroll-offset;
+  
   .hero-image {
     opacity: 0;
     transition: opacity 0.1s ease-in-out;

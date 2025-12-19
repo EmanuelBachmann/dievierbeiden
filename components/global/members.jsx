@@ -68,8 +68,8 @@ export default function Members({ block, dataBinding }) {
   };
 
   return (
-    <section className='members' data-cms-bind={dataBinding}>
-      <div className='container'>
+    <section className='members' data-cms-bind={dataBinding} id={block.anchor}>
+      <div className='container members-container'>
         <h2 className='members-title'>{block.title}</h2>
         <p className='members-text'>{block.text}</p>
 
@@ -96,18 +96,16 @@ export default function Members({ block, dataBinding }) {
                 }}
               >
                 {/* <div className='members-card-container'> */}
-                  <img
-                    className='members-card-img'
-                    src={member.image}
-                    alt={members.name}
-                  />
+                <img
+                  className='members-card-img'
+                  src={member.image}
+                  alt={members.name}
+                />
 
-                  <div className='members-card-content'>
-                    <h3 className='members-card-name'>{member.name}</h3>
-                    <p className='members-card-instrument'>
-                      {member.instrument}
-                    </p>
-                  </div>
+                <div className='members-card-content'>
+                  <h3 className='members-card-name'>{member.name}</h3>
+                  <p className='members-card-instrument'>{member.instrument}</p>
+                </div>
                 {/* </div> */}
               </article>
             );

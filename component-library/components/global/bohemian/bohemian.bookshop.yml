@@ -14,5 +14,6 @@ blueprint:
   background_image: ''
   button_text: ''
   button_link: ''
+  anchor: ''
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

@@ -3,7 +3,11 @@ import data from '../../lib/data';
 
 export default function Introduction({ block, dataBinding }) {
   return (
-    <section className='contact container' data-cms-bind={dataBinding}>
+    <section
+      className='contact container'
+      data-cms-bind={dataBinding}
+      id={block.anchor}
+    >
       <div className='contact-content'>
         <h2>{block.title}</h2>
         <p className='contact-text'>{block.text}</p>

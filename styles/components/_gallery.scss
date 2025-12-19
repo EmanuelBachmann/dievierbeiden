@@ -1,6 +1,7 @@
 .gallery {
   margin-top: $lg-spacing;
   margin-bottom: $lg-spacing;
+  scroll-margin-top: $scroll-offset;
 
   .gallery-mobile-item {
     display: flex;
