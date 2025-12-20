@@ -29,7 +29,7 @@
     position: absolute;
     z-index: 10;
     box-shadow: 0 1px 10px rgba(50, 59, 64, 0.15);
-    border-radius: 10px;
+    border-radius: $sm-border-radius;
     opacity: 0;
     transition: 0.2s opacity ease-in-out;
     z-index: -1;
@@ -128,7 +128,7 @@
         text-decoration: none;
         height: 50px;
         width: 50px;
-        border-radius: 10px;
+        border-radius: $sm-border-radius;
         border: 2px solid $color-primary;
         display: flex;
         align-items: center;

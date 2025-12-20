@@ -16,7 +16,7 @@
     a {
       margin: $base-spacing 0;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: $sm-border-radius;
       border: 2px solid $color-primary;
       display: flex;
       align-items: center;

@@ -96,7 +96,7 @@ export default function Navigation() {
                   <i aria-hidden className='fa-solid fa-phone'></i>
                 </a>
                 <a
-                  href={`https://instagram.com/${data.footer.instagram}`}
+                  href={data.footer.instagram_url}
                   target='_blank'
                 >
                   <i aria-hidden className='fa-brands fa-instagram'></i>

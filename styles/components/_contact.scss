@@ -20,7 +20,7 @@
         text-decoration: none;
         height: 50px;
         width: 50px;
-        border-radius: 10px;
+        border-radius: $sm-border-radius;
         border: 2px solid $color-primary;
         display: flex;
         align-items: center;
@@ -75,7 +75,7 @@
         color: #fff;
         border: none;
         padding: $sm-spacing $base-spacing;
-        border-radius: 15px;
+        border-radius: $sm-border-radius;
         cursor: pointer;
         font-size: $base-font-size;
         font-family: inherit;

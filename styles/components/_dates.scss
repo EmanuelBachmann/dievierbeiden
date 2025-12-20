@@ -67,7 +67,7 @@
           box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
           margin: $base-spacing;
           padding: $base-spacing;
-          border-radius: 15px;
+          border-radius: $base-border-radius;
 
           h3 {
             margin-bottom: $sm-spacing;
