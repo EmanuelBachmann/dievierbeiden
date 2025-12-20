@@ -21,6 +21,7 @@ export default function Introduction({ block, dataBinding }) {
         </div>
 
         <form className='contact-form'>
+          <input type='hidden' name='inbox_key' value='dievierbeiden-contact' />
           <div className='form-group'>
             <label htmlFor='name'>Name</label>
             <input type='text' id='name' name='name' />
