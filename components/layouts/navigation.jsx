@@ -51,6 +51,22 @@ export default function Navigation() {
     history.replaceState(null, '', window.location.pathname);
   }
 
+  const buildContact = () => {
+    return (
+      <>
+      <a href={data.footer.instagram_url} target='_blank'>
+        <i aria-hidden className='fa-brands fa-instagram'></i>
+      </a>
+        <a href={`mailto:${data.footer.email}`}>
+          <i aria-hidden className='fa-solid fa-envelope'></i>
+        </a>
+        <a href={`tel:${data.footer.phone}`} className='mobile-only'>
+          <i aria-hidden className='fa-solid fa-phone'></i>
+        </a>
+      </>
+    );
+  };
+
   return (
     <>
       <header>
@@ -64,6 +80,18 @@ export default function Navigation() {
           <div className='navbar-content'>
             <div className='navbar-row'>
               <img src={navigation.logo} alt='Die vier Beiden Logo' />
+              <div className='desktop-nav-items'>
+                {navigation.items.map((navItem, key) => (
+                  <div className='navbar-nav-item' key={key}>
+                    <button onClick={() => scrollTo(navItem.anchor)}>
+                      {navItem.title}
+                    </button>
+                  </div>
+                ))}
+              </div>
+              <div className='desktop-nav-links'>
+                {buildContact()}
+              </div>
               <button
                 className={`burger-btn`}
                 type='button'
@@ -79,9 +107,7 @@ export default function Navigation() {
                 <div className='navbar-nav-item'>
                   {navigation.items.map((navItem, key) => (
                     <div className='navbar-nav-item' key={key}>
-                      <button
-                        onClick={() => scrollTo(navItem.anchor)}
-                      >
+                      <button onClick={() => scrollTo(navItem.anchor)}>
                         {navItem.title}
                       </button>
                     </div>
@@ -89,18 +115,7 @@ export default function Navigation() {
                 </div>
               </div>
               <div className='navbar-nav-footer'>
-                <a href={`mailto:${data.footer.email}`}>
-                  <i aria-hidden className='fa-solid fa-envelope'></i>
-                </a>
-                <a href={`tel:${data.footer.phone}`}>
-                  <i aria-hidden className='fa-solid fa-phone'></i>
-                </a>
-                <a
-                  href={data.footer.instagram_url}
-                  target='_blank'
-                >
-                  <i aria-hidden className='fa-brands fa-instagram'></i>
-                </a>
+                {buildContact()}
               </div>
             </div>
           </div>
