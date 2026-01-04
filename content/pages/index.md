@@ -108,8 +108,7 @@ content_blocks:
   - _bookshop_name: global/contact
     title: Kontakt
     text: >-
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+      Dein Fest. Unsere Musik.<br>Du planst ein Zeltfest, einen Geburtstag, ein Frühschoppen oder eine andere Feier?<br>Ob große Bühne oder kleines Fest – wir passen uns an und fühlen uns überall wohl, wo echte Stimmung gefragt ist.<br>Schreib uns einfach und erzähl uns von deinem Event. 
     contact_id: 14
     anchor: kontakt
   - _bookshop_name: global/gallery
