@@ -1,5 +1,7 @@
 import React from 'react';
 import data from '../../lib/data';
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt({ html: true });
 
 export default function Introduction({ block, dataBinding }) {
   return (
@@ -7,7 +9,12 @@ export default function Introduction({ block, dataBinding }) {
       <div className='contact-content'>
         <div className='container'>
           <h2>{block.title}</h2>
-          <p className='contact-text'>{block.text}</p>
+          <div
+            className='contact-text'
+            dangerouslySetInnerHTML={{
+              __html: md.render(block.text),
+            }}
+          ></div>
           <div className='contact-button-row'>
             <a href={`mailto:${data.footer.email}`}>
               <i aria-hidden className='fa-solid fa-envelope'></i>
