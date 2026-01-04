@@ -17,6 +17,7 @@
   &-item {
     text-align: center;
     font-weight: bolder;
+    min-width: 150px;
 
     &-number {
       font-size: $xxl-mobile-font-size;

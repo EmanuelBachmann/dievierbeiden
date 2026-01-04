@@ -69,69 +69,69 @@ export default function Members({ block, dataBinding }) {
 
   return (
     <section className='members' data-cms-bind={dataBinding} id={block.anchor}>
-      <div className='container members-container'>
+      <div className='container-lg members-container'>
         <h2 className='members-title'>{block.title}</h2>
-        <p className='members-text'>{block.text}</p>
+        <div className='members-grid'>
+          <p className='members-text'>{block.text}</p>
+          <div className='members-cards'>
+            {members.map((member, index) => {
+              const isActive = index === activeState.activeIndex;
+              const isPrevious = index === activeState.previousIndex;
 
-        <div className='members-cards'>
-          {members.map((member, index) => {
-            const isActive = index === activeState.activeIndex;
-            const isPrevious = index === activeState.previousIndex;
+              let animationClass = '';
+              if (isPrevious && activeState.direction === 'next') {
+                animationClass = 'fly-out';
+              }
+              if (isActive && activeState.direction === 'prev') {
+                animationClass = 'fly-in';
+              }
 
-            let animationClass = '';
-            if (isPrevious && activeState.direction === 'next') {
-              animationClass = 'fly-out';
-            }
-            if (isActive && activeState.direction === 'prev') {
-              animationClass = 'fly-in';
-            }
+              return (
+                <article
+                  key={index}
+                  className={`members-card ${animationClass}`}
+                  style={{
+                    '--angle': `${member.angle}deg`,
+                    zIndex: getZIndex(index),
+                  }}
+                >
+                  <img
+                    className='members-card-img'
+                    src={member.image}
+                    alt={members.name}
+                  />
 
-            return (
-              <article
-                key={index}
-                className={`members-card ${animationClass}`}
-                style={{
-                  '--angle': `${member.angle}deg`,
-                  zIndex: getZIndex(index),
+                  <div className='members-card-content'>
+                    <h3 className='members-card-name'>{member.name}</h3>
+                    <p className='members-card-instrument'>
+                      {member.instrument}
+                    </p>
+                  </div>
+                </article>
+              );
+            })}
+
+            <footer className='members-card-footer'>
+              <button
+                onClick={() => {
+                  prevCard();
+                  setAutomaticMode(false);
                 }}
+                aria-label='Previous'
               >
-                {/* <div className='members-card-container'> */}
-                <img
-                  className='members-card-img'
-                  src={member.image}
-                  alt={members.name}
-                />
-
-                <div className='members-card-content'>
-                  <h3 className='members-card-name'>{member.name}</h3>
-                  <p className='members-card-instrument'>{member.instrument}</p>
-                </div>
-                {/* </div> */}
-              </article>
-            );
-          })}
-
-          {/* Buttons rendered once */}
-          <footer className='members-card-footer'>
-            <button
-              onClick={() => {
-                prevCard();
-                setAutomaticMode(false);
-              }}
-              aria-label='Previous'
-            >
-              <i aria-hidden className='fa-solid fa-chevron-left'></i>
-            </button>
-            <button
-              onClick={() => {
-                nextCard();
-                setAutomaticMode(false);
-              }}
-              aria-label='Next'
-            >
-              <i aria-hidden className='fa-solid fa-chevron-right'></i>
-            </button>
-          </footer>
+                <i aria-hidden className='fa-solid fa-chevron-left'></i>
+              </button>
+              <button
+                onClick={() => {
+                  nextCard();
+                  setAutomaticMode(false);
+                }}
+                aria-label='Next'
+              >
+                <i aria-hidden className='fa-solid fa-chevron-right'></i>
+              </button>
+            </footer>
+          </div>
         </div>
       </div>
     </section>

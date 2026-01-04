@@ -2,137 +2,153 @@
   margin-top: $lg-spacing;
   margin-bottom: $lg-spacing;
   scroll-margin-top: $scroll-offset;
+  overflow: hidden;
+  
+  @include media-breakpoint-up-lg {
+    margin-top: $xl-spacing;
+    margin-bottom: $xl-spacing;
+  }
 
   .members-container {
-    overflow: hidden;
-
-    .members-text {
-      margin-top: $base-spacing;
-      margin-bottom: $base-spacing;
-    }
-
-    .members-cards {
-      margin-top: $lg-spacing;
-      display: grid;
-      position: relative;
-      text-align: center;
-    }
-
-    .members-card {
-      width: 250px;
-      max-width: calc(100% - #{$base-spacing}* 4);
-      height: 100%;
-      grid-area: 1/1;
-      display: flex;
-      flex-direction: column;
-      place-items: center;
-      pointer-events: none;
-      overflow: hidden;
-      background-color: white;
-      rotate: var(--angle, 0deg);
-      border-radius: $sm-border-radius;
-      border: 5px solid $color-primary;
-      box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
-      transition: z-index 0.2s ease 0.3s;
-      margin: auto;
-    }
-
-    @keyframes flyOut {
-      0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(150%);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes flyIn {
-      0% {
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(150%);
-      }
-      100% {
-        transform: translateX(0%);
-      }
-    }
-
-    .members-card.fly-in {
-      animation: flyIn 0.8s ease-in-out forwards;
-    }
-
-    .members-card.fly-out {
-      animation: flyOut 0.8s ease-in-out forwards;
-    }
-
-    .members-card-container {
-      width: 250px;
-      overflow: hidden;
-      max-width: calc(100% - #{$base-spacing}* 4);
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      rotate: var(--angle, 0deg);
-      border-radius: $sm-border-radius;
-      border: 5px solid $color-primary;
-      box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
-      transition: transform var(--duration) cubic-bezier(0.34, 1.56, 0.64, 1),
-        rotate var(--duration) cubic-bezier(0.34, 1.56, 0.64, 1);
-      height: 100%;
-    }
-
-    .members-card-img {
-      object-fit: cover;
-      width: 100%;
-      aspect-ratio: 1 / 1;
-    }
-
-    .members-card-footer {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: $md-spacing;
-    }
-
-    .members-card-footer button {
-      cursor: pointer;
-      border: none;
-      font-size: 24px;
-      color: $color-primary;
-      border: 2px solid $color-primary;
-      background-color: white;
-      border-radius: 50%;
-      width: 45px;
-      height: 45px;
-      display: grid;
-      place-content: center;
-      transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-
-      // &:hover {
-      //   color: #fff;
-      //   background-color: $color-primary;
-      // }
-    }
-
-    .members-card-content {
-      text-align: center;
-      padding: $base-spacing;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-
-      .members-card-name {
-        font-size: $md-mobile-font-size;
-        margin-bottom: $sm-spacing;
+    .members-grid {
+      @include media-breakpoint-up-lg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
       }
 
-      .members-card-instrument {
+      .members-text {
+        margin-top: $base-spacing;
+        margin-bottom: $base-spacing;
+
+        @include media-breakpoint-up-lg {
+          margin: auto;
+          max-width: 300px;
+        }
+      }
+
+      .members-cards {
+        margin-top: $lg-spacing;
+        display: grid;
+        position: relative;
+        text-align: center;
+      }
+
+      .members-card {
+        width: 250px;
+        max-width: calc(100% - #{$base-spacing}* 4);
+        height: 100%;
+        grid-area: 1/1;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        pointer-events: none;
+        overflow: hidden;
+        background-color: white;
+        rotate: var(--angle, 0deg);
+        border-radius: $sm-border-radius;
+        border: 5px solid $color-primary;
+        box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
+        transition: z-index 0.2s ease 0.3s;
+        margin: auto;
+      }
+
+      @keyframes flyOut {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(150%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes flyIn {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(150%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      .members-card.fly-in {
+        animation: flyIn 0.8s ease-in-out forwards;
+      }
+
+      .members-card.fly-out {
+        animation: flyOut 0.8s ease-in-out forwards;
+      }
+
+      .members-card-container {
+        width: 250px;
+        overflow: hidden;
+        max-width: calc(100% - #{$base-spacing}* 4);
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        rotate: var(--angle, 0deg);
+        border-radius: $sm-border-radius;
+        border: 5px solid $color-primary;
+        box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
+        transition: transform var(--duration) cubic-bezier(0.34, 1.56, 0.64, 1),
+          rotate var(--duration) cubic-bezier(0.34, 1.56, 0.64, 1);
+        height: 100%;
+      }
+
+      .members-card-img {
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+      }
+
+      .members-card-footer {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: $md-spacing;
+      }
+
+      .members-card-footer button {
+        cursor: pointer;
+        border: none;
+        font-size: 24px;
+        color: $color-primary;
+        border: 2px solid $color-primary;
+        background-color: white;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: grid;
+        place-content: center;
+        transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+
+        // &:hover {
+        //   color: #fff;
+        //   background-color: $color-primary;
+        // }
+      }
+
+      .members-card-content {
+        text-align: center;
+        padding: $base-spacing;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        .members-card-name {
+          font-size: $md-mobile-font-size;
+          margin-bottom: $sm-spacing;
+        }
+
+        .members-card-instrument {
+        }
       }
     }
   }

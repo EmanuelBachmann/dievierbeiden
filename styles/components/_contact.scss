@@ -3,6 +3,11 @@
   margin-bottom: $lg-spacing;
   scroll-margin-top: $scroll-offset;
 
+  @include media-breakpoint-up-lg {
+    margin-top: $xl-spacing;
+    margin-bottom: $xl-spacing;
+  }
+
   .contact-content {
     .contact-text {
       margin-top: $base-spacing;
@@ -32,11 +37,19 @@
     }
 
     .contact-form {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr;
       gap: $base-spacing;
       text-align: left;
       margin-top: $base-spacing;
+
+      @include media-breakpoint-up-sm {
+        grid-template-columns: 1fr 1fr;
+
+        .col-span {
+          grid-column: span 2;
+        }
+      }
 
       .form-group {
         display: flex;

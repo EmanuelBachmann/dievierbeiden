@@ -25,12 +25,12 @@
         margin-top: $md-spacing;
 
         .introduction-img {
-          grid-column: 2;
+          grid-column: 1;
           grid-row: 1 / span 2;
         }
 
         .introduction-text-top {
-          grid-column: 1;
+          grid-column: 2;
           grid-row: 1;
           display: flex;
           flex-direction: column;
@@ -38,7 +38,7 @@
         }
 
         .introduction-text-bottom {
-          grid-column: 1;
+          grid-column: 2;
           grid-row: 2;
         }
       }

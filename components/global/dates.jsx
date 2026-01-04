@@ -13,10 +13,12 @@ export default function Dates({ block, dataBinding }) {
   };
   return (
     <section className='dates' data-cms-bind={dataBinding} id={block.anchor}>
-      <div className='container dates-container'>
-        <h2 className='dates-title'>{block.title}</h2>
-        <p className='dates-text'>{block.text}</p>
-        <div className='dates-items'>
+      <div className='dates-container'>
+        <div className='container'>
+          <h2 className='dates-title'>{block.title}</h2>
+          <p className='dates-text'>{block.text}</p>
+        </div>
+        <div className='dates-items container-lg'>
           {block.dates.map((date, index) => {
             const isRight = index % 2 == 0;
             const isFirst = index == 0;

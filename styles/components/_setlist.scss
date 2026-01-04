@@ -3,6 +3,11 @@
   margin-bottom: $lg-spacing;
   scroll-margin-top: $scroll-offset;
 
+  @include media-breakpoint-up-lg {
+    margin-top: $xl-spacing;
+    margin-bottom: $xl-spacing;
+  }
+
   &-text {
     margin-top: $base-spacing;
     margin-bottom: $base-spacing;
@@ -25,7 +30,7 @@
       background: white;
       color: $color-primary;
       gap: 10px;
-      padding: 10px 13px;  
+      padding: 10px 13px;
     }
   }
 }

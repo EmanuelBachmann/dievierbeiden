@@ -23,14 +23,10 @@ export default function Bohemian({ block, dataBinding }) {
       id={block.anchor}
     >
       <div className='bohemian-overlay'>
-        <div className='container'>
-          <div className='bohemian-content'>
-            <h2>{block.title}</h2>
-            <p>{block.text}</p>
-            <button onClick={() => scrollToContact()}>
-              {block.button_text}
-            </button>
-          </div>
+        <div className='bohemian-content container'>
+          <h2>{block.title}</h2>
+          <p>{block.text}</p>
+          <button onClick={() => scrollToContact()}>{block.button_text}</button>
         </div>
       </div>
     </section>

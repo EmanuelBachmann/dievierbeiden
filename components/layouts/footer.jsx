@@ -4,7 +4,7 @@ export default function Footer({}) {
   const { footer } = data;
   return (
     <footer className='footer' id='footer'>
-      <div className='container footer-container'>
+      <div className='container-xl footer-container'>
         <img className='footer-logo' src={footer.logo} />
         <div className='footer-contact-container'>
           <a href={`mailto:${footer.email}`}>{footer.email}</a>
