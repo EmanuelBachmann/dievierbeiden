@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt({ html: true });
 
 export default function Dates({ block, dataBinding }) {
   const cardVariants = {
@@ -16,7 +18,12 @@ export default function Dates({ block, dataBinding }) {
       <div className='dates-container'>
         <div className='container'>
           <h2 className='dates-title'>{block.title}</h2>
-          <p className='dates-text'>{block.text}</p>
+          <div
+            className='dates-text'
+            dangerouslySetInnerHTML={{
+              __html: md.render(block.text),
+            }}
+          ></div>
         </div>
         <div className='dates-items container-lg'>
           {block.dates.map((date, index) => {

@@ -15,7 +15,7 @@ content_blocks:
 
 
       voluptua. At vero eos etLorem ipsum dolor sit amet. Lorem ipsum dolor sit
-      amet, consetetu sadipscing<br>asdf<br>asdf
+      amet, consetetu sadipscing
     text_bottom: >-
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
       nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
@@ -79,8 +79,7 @@ content_blocks:
   - _bookshop_name: global/dates
     title: Termine
     text: >-
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+      Du willst uns live erleben?<br>Hier findest du unsere nächsten Auftritte.<br>Komm vorbei, hör rein und feier mit uns – wir freuen uns über bekannte und neue Gesichter.
     icon: /uploads/d4b_logo_quadrat_gold_transparent_icon.png
     dates:
       - title: Musikhock
