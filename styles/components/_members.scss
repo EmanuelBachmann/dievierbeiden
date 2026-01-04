@@ -3,7 +3,7 @@
   margin-bottom: $lg-spacing;
   scroll-margin-top: $scroll-offset;
   overflow: hidden;
-  
+
   @include media-breakpoint-up-lg {
     margin-top: $xl-spacing;
     margin-bottom: $xl-spacing;
@@ -48,7 +48,7 @@
         border-radius: $sm-border-radius;
         border: 5px solid $color-primary;
         box-shadow: 0 0 5px 3px rgba(0 0 0 / 0.05);
-        transition: z-index 0.2s ease 0.3s;
+        transition: z-index 0.2s ease 0.25s;
         margin: auto;
       }
 
@@ -109,7 +109,6 @@
       .members-card-footer {
         display: flex;
         justify-content: center;
-        gap: 2rem;
         margin-top: $md-spacing;
       }
 
@@ -126,11 +125,15 @@
         display: grid;
         place-content: center;
         transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+        margin: 15px;
 
-        // &:hover {
-        //   color: #fff;
-        //   background-color: $color-primary;
-        // }
+        @include media-breakpoint-up-lg {
+          transition: box-shadow 0.25s ease-in-out;
+
+          &:hover {
+            box-shadow: 0 0 10px $color-primary;
+          }
+        }
       }
 
       .members-card-content {

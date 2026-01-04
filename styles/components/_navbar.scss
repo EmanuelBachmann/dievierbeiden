@@ -17,7 +17,7 @@
     height: 100%;
     max-height: var(--height-fixed-row);
     overflow: hidden;
-    transition: 0.3s max-height ease-in-out;
+    transition: 0.25s max-height ease-in-out;
   }
 
   &-shadow {
@@ -56,6 +56,28 @@
     @include media-breakpoint-up-lg {
       display: flex;
     }
+
+    button {
+      position: relative;
+      overflow: hidden;
+    }
+
+    button::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: $color-primary;
+      background-size: 200% auto;
+      transition: all 0.5s;
+      transform: translateX(-100%);
+    }
+
+    button:hover::after {
+      transform: translateX(0%);
+    }
   }
 
   .desktop-nav-links {
@@ -64,8 +86,17 @@
     gap: 30px;
     margin-right: 10px;
 
-    i {
-      font-size: 25px;
+    a {
+      i {
+        font-size: 25px;
+        transition: transform 0.25s ease-in-out;
+      }
+
+      &:hover {
+        i {
+          transform: scale(1.2);
+        }
+      }
     }
 
     .mobile-only {
@@ -96,7 +127,7 @@
       height: 3px;
       border-radius: 1px;
       background: $color-text;
-      transition: background-color 0.3s ease-in-out, rotate 0.3s ease-in-out;
+      transition: background-color 0.25s ease-in-out, rotate 0.25s ease-in-out;
       position: relative;
     }
 
@@ -190,7 +221,7 @@
 
   &.not-scrolled:not(.open) {
     .navbar-shadow {
-      transition-delay: 0.3s;
+      transition-delay: 0.25s;
     }
   }
 

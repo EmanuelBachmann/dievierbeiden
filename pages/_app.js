@@ -3,7 +3,7 @@ import '../styles/theme.scss';
 import { CloudCannonConnect } from '@cloudcannon/react-connector';
 import { Inter } from 'next/font/google';
 import React, { useEffect, useState } from 'react';
-import AnimatedCursor from 'react-animated-cursor';
+// import AnimatedCursor from 'react-animated-cursor';
 
 const inter = Inter({
   weight: ['300', '400', '500', '600', '700'],
@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <div className={inter.className}>
-      {!isTouchdevice && (
+      {/* {!isTouchdevice && (
         <AnimatedCursor
           clickables={[
             {
@@ -82,7 +82,7 @@ export default function App({ Component, pageProps }) {
             backgroundColor: 'transparent',
           }}
         />
-      )}
+      )} */}
       <AppComponent {...pageProps} />
     </div>
   );

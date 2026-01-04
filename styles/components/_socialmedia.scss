@@ -40,6 +40,18 @@
     a {
       color: black;
       font-size: $xl-mobile-font-size;
+
+      @include media-breakpoint-up-lg {
+        i {
+          transition: transform 0.25s ease-in-out;
+        }
+
+        &:hover {
+          i {
+            transform: scale(1.2);
+          }
+        }
+      }
     }
   }
 }

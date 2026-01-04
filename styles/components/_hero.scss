@@ -24,6 +24,10 @@
     left: 0;
     width: 100%;
     background: linear-gradient(to bottom, transparent 0%, white 100%);
+
+    @include media-breakpoint-up-lg {
+      height: 25%;
+    }
   }
 
   .hero-image-mobile {

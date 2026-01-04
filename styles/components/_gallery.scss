@@ -16,12 +16,15 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    aspect-ratio: 3 / 2;
 
     img {
       max-width: 100%;
       transform: scale(1);
       transition: transform 0.35s ease-out;
       will-change: transform;
+      width: 100%;
+      object-fit: cover;
     }
 
     @include media-breakpoint-down-lg {
