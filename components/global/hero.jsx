@@ -20,7 +20,11 @@ export default function Hero({ block, dataBinding }) {
       data-cms-bind={dataBinding}
       id={block.anchor}
     >
-      {/* <Image className='hero-image' src={block.background_image} alt={block.background_alt} /> */}
+      <img
+        className='hero-image hero-image-desktop'
+        src={block.background_image}
+        alt={block.background_alt}
+      ></img>
       <img
         className='hero-image hero-image-mobile'
         src={block.background_image_mobile}

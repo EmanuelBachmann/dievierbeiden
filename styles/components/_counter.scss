@@ -3,24 +3,35 @@
   display: flex;
   margin-top: $lg-spacing;
   margin-bottom: $lg-spacing;
-  padding-top: $base-spacing;
-  padding-bottom: $base-spacing;
+  padding-top: $lg-spacing;
+  padding-bottom: $lg-spacing;
   scroll-margin-top: $scroll-offset;
 
   &-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: $lg-spacing;
   }
 
   &-item {
     text-align: center;
-    margin-top: $md-spacing;
-    margin-bottom: $md-spacing;
     font-weight: bolder;
 
     &-number {
       font-size: $xxl-mobile-font-size;
+    }
+  }
+
+  @include media-breakpoint-up-lg {
+    margin-top: $xl-spacing;
+    margin-bottom: $xl-spacing;
+    padding-top: $xl-spacing;
+    padding-bottom: $xl-spacing;
+
+    .counter-container {
+      flex-direction: row;
+      justify-content: space-evenly;
     }
   }
 }

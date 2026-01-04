@@ -18,6 +18,10 @@
       font-size: $lg-mobile-font-size;
       max-width: 180px;
       margin-bottom:$base-spacing ;
+
+      @include media-breakpoint-up-md {
+        font-size: $lg-mobile-font-size;
+      }
     }
   }
 

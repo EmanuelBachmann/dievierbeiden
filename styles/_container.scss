@@ -6,7 +6,8 @@
 .container,
 .container-default,
 .container-base,
-.container-none .container-xl,
+.container-none,
+.container-xl,
 .container-lg,
 .container-md,
 .container-sm {
@@ -46,7 +47,7 @@
   max-width: 1030px;
 }
 .container-xl {
-  max-width: 1090px;
+  max-width: 1250px;
 }
 
 .w-10 {
