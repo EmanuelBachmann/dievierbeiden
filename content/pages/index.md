@@ -92,7 +92,7 @@ content_blocks:
         link: https://kaiserwiesn.at/
     anchor: termine
   - _bookshop_name: global/socialmedia
-    title: Folgen Sie uns schon?
+    title: Folgst du uns schon?
     instagram_url: https://instagram.com/die4beiden
     facebook_url: https://www.facebook.com/p/Die-4-Beiden-61558468670246/
     anchor: socialmedia
