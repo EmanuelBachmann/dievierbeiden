@@ -100,6 +100,32 @@
             &:not(:first-of-type) {
               margin-top: $xs-spacing;
             }
+
+            a {
+              text-decoration: none;
+
+              @include media-breakpoint-up-lg {
+                position: relative;
+                overflow: hidden;
+
+                &::after {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  height: 2px;
+                  width: 100%;
+                  background: $color-primary;
+                  background-size: 200% auto;
+                  transition: all 0.5s;
+                  transform: translateX(-100%);
+                }
+
+                &:hover::after {
+                  transform: translateX(0%);
+                }
+              }
+            }
           }
         }
 

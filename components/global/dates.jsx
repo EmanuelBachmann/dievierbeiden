@@ -61,6 +61,17 @@ export default function Dates({ block, dataBinding }) {
                       <i aria-hidden className='fa-solid fa-location-dot'></i>
                       <p>{date.location}</p>
                     </div>
+                    {date.link && (
+                      <div className='dates-item-content-icon-container'>
+                        <i
+                          aria-hidden
+                          className='fa-solid fa-square-arrow-up-right'
+                        ></i>
+                        <a href={date.link} target='_blank'>
+                          Zum Veranstalter
+                        </a>
+                      </div>
+                    )}
                   </motion.div>
                 </div>
                 {!isLast && (
