@@ -73,23 +73,23 @@ content_blocks:
       Du willst uns live erleben?<br>Hier findest du unsere nächsten Auftritte.<br>Komm vorbei, hör rein und feier mit uns – wir freuen uns über bekannte und neue Gesichter.
     icon: /uploads/d4b_logo_quadrat_gold_transparent_icon.png
     dates:
-      - title: Musikhock
-        date: 30. August ab 20 Uhr
-        location: Dornirn, Rohrbach
+      - title: Winterwiesn Schnifis
+        date: 17 JAN | ab 19:30 Uhr
+        location: Schnifis
         is_bohemian: false
-        link: https://google.com
-      - title: Alberschwende Frühshoppen
-        date: 7. September ab 11 Uhr
-        location: Alberschwende
-        is_bohemian: true
-      - title: Klosterfest Stadtmusik
-        date: 19. September ab 16 Uhr
-        location: Dornbirn Kloster
-        is_bohemian: true
-      - title: Bockbierfest Frastanz
-        date: 20. September ab 20 Uhr
+        link: http://www.gm-schnifis.at/v3/aktuelles/192-save-the-date-winterwiesn-2026
+      - title: 140 Jahre SchützenMV Koblach
+        date: 11 JUL | ab 21:00 Uhr
+        location: Koblach
+        is_bohemian: false
+      - title: Weinnacht Bartholomäberg
+        date: 22 AUG | ab 21:00 Uhr
         location: Frastanz
-        link: https://google.com
+        link: https://www.hm-bartholomaeberg.at
+      - title: Kaiserwiesn Wien
+        date: 9 OKT | ab 15:00 Uhr
+        location: Wien, Praterstern
+        link: https://kaiserwiesn.at/
     anchor: termine
   - _bookshop_name: global/socialmedia
     title: Folgen Sie uns schon?
