@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import MarkdownIt from 'markdown-it';
 const md = new MarkdownIt({ html: true });
 
@@ -25,7 +25,11 @@ export default function Bohemian({ block, dataBinding }) {
       <div className='bohemian-overlay'>
         <div className='bohemian-content container'>
           <h2>{block.title}</h2>
-          <p>{block.text}</p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: md.render(block.text),
+            }}
+          ></div>
           <button onClick={() => scrollToContact()}>{block.button_text}</button>
         </div>
       </div>

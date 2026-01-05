@@ -9,17 +9,10 @@ content_blocks:
   - _bookshop_name: global/introduction
     title: Die vier Beiden
     text_top: >-
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
-      fpad lkasdjf lk
-
-
-      voluptua. At vero eos etLorem ipsum dolor sit amet. Lorem ipsum dolor sit
-      amet, consetetu sadipscing
+      Wir sind Die 4 Beiden - eine junge Partyband aus dem Ländle.
     text_bottom: >-
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
-      fpad lkasdjf lk
+      Wir machen Live-Musik für Feste, die man nicht vergisst – und sorgen von der ersten Nummer bis zur letzten Zugabe für gute Laune, volle Tanzflächen und beste Stimmung. <br>
+      Egal ob gemütlich oder ausgelassen – wir spielen nicht einfach ein Programm, wir begleiten euer Fest.
     image: /uploads/d4b-szene.jpg
     image_alt: Szene 2025
     anchor: die_vier_beiden
@@ -35,9 +28,8 @@ content_blocks:
   - _bookshop_name: global/members
     title: Das sind wir
     text: >-
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
-      fpad lkasdjf lk
+      Acht Musiker und eine Sängerin zwischen 18 und 29 Jahre alt und wir kommen aus ganz Vorarlberg – von Hörbranz bis Bludenz. <br>
+      Was uns verbindet, ist die Leidenschaft für Musik und echte Energie auf der Bühne.
     members:
       - name: Emanuel Bachmann
         instrument: Trompete
@@ -70,8 +62,7 @@ content_blocks:
   - _bookshop_name: global/bohemian
     title: Böhmische Formation
     text: >-
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+      Neben unserem vielseitigen modernen Programm gibt es Die 4 Beiden auch als reine böhmische Formation. In dieser Besetzung spielen wir ohne Sängerin und zu acht.<br><br>Mit Marsch, Polka und der ein oder anderen modernen Nummer ist diese Variante perfekt geeignet für Frühschoppen und andere traditionellere Veranstaltungen.
     background_image: /uploads/kilbi_mobile.jpg
     button_text: Buchen
     button_link: '#'
@@ -129,8 +120,8 @@ content_blocks:
   - _bookshop_name: global/setlist
     title: Setlist
     text: >-
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumirmod tempor invidunt ut labore et dolore magna aliquyam erat asd
+      Unsere Setlist ist so vielseitig wie unsere Auftritte: Von A wie „A Sky full of Stars“ bis Z wie „Zombie“. Von mitreißenden Klassikern bis zu rockigen und modernen Party-Nummern – zum Mitsingen, Tanzen und Feiern.<br><br>
+      Je nach Anlass, Stimmung und Besetzung stellen wir das Programm individuell zusammen – damit es für euch und eure Gäste genau passt.
     button_text: Download
     setlist: /uploads/d4b_setlist.PDF
     anchor: setlist

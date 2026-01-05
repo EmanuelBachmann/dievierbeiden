@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import MarkdownIt from 'markdown-it';
-import ShimmerImage from '../shared/shimmer_image';
 const md = new MarkdownIt({ html: true });
+import ShimmerImage from '../shared/shimmer_image';
 
 export default function Introduction({ block, dataBinding }) {
   return (

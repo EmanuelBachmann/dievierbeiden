@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt({ html: true });
 
 export default function Members({ block, dataBinding }) {
   const [activeState, setActiveState] = useState({
@@ -72,7 +74,12 @@ export default function Members({ block, dataBinding }) {
       <div className='container-lg members-container'>
         <h2 className='members-title'>{block.title}</h2>
         <div className='members-grid'>
-          <p className='members-text'>{block.text}</p>
+          <div
+            className='members-text'
+            dangerouslySetInnerHTML={{
+              __html: md.render(block.text),
+            }}
+          ></div>
           <div className='members-cards'>
             {members.map((member, index) => {
               const isActive = index === activeState.activeIndex;

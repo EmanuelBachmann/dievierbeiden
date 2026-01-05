@@ -1,5 +1,6 @@
 import React from 'react';
-import data from '../../lib/data';
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt({ html: true });
 
 export default function Setlist({ block, dataBinding }) {
   return (
@@ -9,7 +10,12 @@ export default function Setlist({ block, dataBinding }) {
       id={block.anchor}
     >
       <h2>{block.title}</h2>
-      <p className='setlist-text'>{block.text}</p>
+      <div
+        className='setlist-text'
+        dangerouslySetInnerHTML={{
+          __html: md.render(block.text),
+        }}
+      ></div>
       <div className='setlist-button-row'>
         <a href={block.setlist} target='_blank' rel='noreferrer'>
           <i aria-hidden className='fa-solid fa-download'></i>
