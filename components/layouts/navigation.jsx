@@ -54,9 +54,16 @@ export default function Navigation() {
   const buildContact = () => {
     return (
       <>
-      <a href={data.footer.instagram_url} target='_blank'>
-        <i aria-hidden className='fa-brands fa-instagram'></i>
-      </a>
+        <a href={data.footer.instagram_url} target='_blank'>
+          <i aria-hidden className='fa-brands fa-instagram'></i>
+        </a>
+        <a
+          href={data.footer.facebook_url}
+          target='_blank'
+          className='mobile-only'
+        >
+          <i aria-hidden className='fa-brands fa-facebook'></i>
+        </a>
         <a href={`mailto:${data.footer.email}`}>
           <i aria-hidden className='fa-solid fa-envelope'></i>
         </a>
@@ -79,7 +86,7 @@ export default function Navigation() {
           <div className={`navbar-shadow`}></div>
           <div className='navbar-content'>
             <div className='navbar-row'>
-              <img src={navigation.logo} alt='Die vier Beiden Logo' />
+              <img src={navigation.logo} alt='Die 4 Beiden Logo' />
               <div className='desktop-nav-items'>
                 {navigation.items.map((navItem, key) => (
                   <div className='navbar-nav-item' key={key}>
@@ -89,9 +96,7 @@ export default function Navigation() {
                   </div>
                 ))}
               </div>
-              <div className='desktop-nav-links'>
-                {buildContact()}
-              </div>
+              <div className='desktop-nav-links'>{buildContact()}</div>
               <button
                 className={`burger-btn`}
                 type='button'
@@ -104,19 +109,15 @@ export default function Navigation() {
             </div>
             <div className='navbar-open-content'>
               <div className='navbar-nav-items'>
-                <div className='navbar-nav-item'>
-                  {navigation.items.map((navItem, key) => (
-                    <div className='navbar-nav-item' key={key}>
-                      <button onClick={() => scrollTo(navItem.anchor)}>
-                        {navItem.title}
-                      </button>
-                    </div>
-                  ))}
-                </div>
+                {navigation.items.map((navItem, key) => (
+                  <div className='navbar-nav-item' key={key}>
+                    <button onClick={() => scrollTo(navItem.anchor)}>
+                      {navItem.title}
+                    </button>
+                  </div>
+                ))}
               </div>
-              <div className='navbar-nav-footer'>
-                {buildContact()}
-              </div>
+              <div className='navbar-nav-footer'>{buildContact()}</div>
             </div>
           </div>
         </nav>

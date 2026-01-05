@@ -6,7 +6,7 @@
   width: calc(100% - #{$sm-spacing} * 2);
   z-index: 100;
 
-  --height-container: 520px;
+  --height-container: 480px;
   --height-fixed-row: 80px;
 
   &-content {
@@ -145,7 +145,7 @@
     text-align: center;
     padding: $base-spacing 0;
     width: 100%;
-    font-size: $md-mobile-font-size;
+    font-size: $lg-mobile-font-size;
     font-weight: 500;
 
     &:not(:last-of-type) {
@@ -187,7 +187,8 @@
       align-items: center;
       height: 100%;
       width: 100%;
-      padding: $base-spacing;
+      padding-right: $base-spacing;
+      padding-left: $base-spacing;
     }
 
     .navbar-nav-footer {

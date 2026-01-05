@@ -25,7 +25,8 @@
       margin-bottom: $base-spacing;
 
       @include media-breakpoint-up-md {
-        font-size: $lg-mobile-font-size;
+        font-size: $lg-font-size;
+        max-width: none;
       }
     }
   }

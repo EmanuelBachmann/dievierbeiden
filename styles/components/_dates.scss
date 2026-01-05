@@ -73,6 +73,12 @@
           h3 {
             margin-bottom: $sm-spacing;
             text-transform: none;
+
+            font-size: $base-font-size;
+
+            @include media-breakpoint-up-md {
+              font-size: $md-font-size;
+            }
           }
 
           .dates-item-content-icon-container {
@@ -81,6 +87,11 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+            font-size: $sm-font-size;
+
+            @include media-breakpoint-up-md {
+              font-size: $base-font-size;
+            }
 
             i {
               color: $color-primary;
@@ -100,7 +111,7 @@
           margin-right: auto;
         }
       }
-      
+
       .dates-item-line {
         display: flex;
         flex-direction: row;

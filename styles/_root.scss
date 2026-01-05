@@ -8,7 +8,8 @@ body:not(.loaded) * {
   animation: none !important;
 }
 
-body, html{
+body,
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -23,7 +24,7 @@ body {
   margin: 0 !important;
   overflow-x: auto;
   max-width: 100vw;
-  
+
   * {
     box-sizing: border-box;
   }
@@ -46,9 +47,7 @@ h1,
 h2,
 .h2,
 h3,
-.h3,
-h4,
-.h4 {
+.h3 {
   line-height: 1.2;
   font-weight: $semibold-font-weight;
   // letter-spacing: $lg-letter-spacing;
@@ -87,10 +86,4 @@ h3,
   @include media-breakpoint-down-md {
     font-size: $lg-mobile-font-size;
   }
-}
-
-h4,
-.h4 {
-  font-size: $md-font-size;
-  color: $color-text;
 }
