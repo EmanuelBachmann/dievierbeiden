@@ -87,10 +87,14 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            font-size: $sm-font-size;
 
-            @include media-breakpoint-up-md {
-              font-size: $base-font-size;
+            p,
+            a {
+              font-size: $sm-font-size;
+
+              @include media-breakpoint-up-md {
+                font-size: $base-font-size;
+              }
             }
 
             i {
