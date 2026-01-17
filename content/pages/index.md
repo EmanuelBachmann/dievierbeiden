@@ -100,8 +100,9 @@ content_blocks:
     title: Kontakt
     text: >-
       Dein Fest. Unsere Musik. Du planst ein Zeltfest, einen Geburtstag, ein Frühschoppen oder eine andere Feier?<br>Ob große Bühne oder kleines Fest – wir passen uns an und fühlen uns überall wohl, wo echte Stimmung gefragt ist.<br>Schreib uns einfach und erzähl uns von deinem Event. 
-    contact_id: 14
+    contact_id: dievierbeiden-contact
     anchor: kontakt
+    success_message: Danke für Ihre Kontaktanfrage. Wir werden uns bald bei Ihnen melden.
   - _bookshop_name: global/gallery
     images:
       - image: /uploads/szene_black_white.jpg

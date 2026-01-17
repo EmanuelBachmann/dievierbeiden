@@ -87,3 +87,26 @@ h3,
     font-size: $lg-mobile-font-size;
   }
 }
+
+.Toastify__toast-container {
+  right: 0 !important;
+  padding-right: 0.75rem !important;
+  padding-left: 0.75rem !important;
+  margin-top: 85px !important;
+  --toastify-color-progress-success: #{$color-primary} !important;
+  --toastify-icon-color-success: #{$color-primary} !important;
+  // --toastify-color-progress-bgo: 1 !important;
+  font-size: $base-font-size !important;
+
+  .Toastify__toast {
+    border-radius: $sm-border-radius !important;
+    font-size: $sm-font-size;
+    padding-right: 20px;
+    font-family: inherit;
+    color: $color-text;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 100px !important;
+  }
+}
