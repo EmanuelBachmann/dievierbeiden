@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Counter({ block, dataBinding }) {
+export default function SocialMedia({ block, dataBinding }) {
   return (
     <section
       className='socialmedia'

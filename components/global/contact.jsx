@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 const md = new MarkdownIt({ html: true });
 
-export default function Introduction({ block, dataBinding }) {
+export default function Contact({ block, dataBinding }) {
   const router = useRouter();
   const submittedQuery = router.query.submitted;
   const [submitted, setSubmitted] = useState(false);
