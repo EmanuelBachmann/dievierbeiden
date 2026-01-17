@@ -31,33 +31,35 @@ export default function Contact({ block, dataBinding }) {
   }, []);
 
   const setupForm = () => {
-    formEl.current.addEventListener('submit', function (event) {
-      if (!tokenCreated) {
-        event.preventDefault();
-        if (!submitted) {
-          setSubmitted(true);
-          if (process.env.NODE_ENV !== 'development') {
-            grecaptcha.ready(function () {
-              grecaptcha
-                .execute(process.env.NEXT_PUBLIC_RECAPTCHA_KEY, {
-                  action: 'create_comment',
-                })
-                .then(function (token) {
-                  const input = document.createElement('input');
-                  input.type = 'hidden';
-                  input.name = 'g-recaptcha-response';
-                  input.value = token;
-                  formEl.current.appendChild(input);
-                  setTokenCreated(true);
-                  formEl.current.submit();
-                });
-            });
-          } else {
-            formEl.current.submit();
+    if (formEl.current) {
+      formEl.current.addEventListener('submit', function (event) {
+        if (!tokenCreated) {
+          event.preventDefault();
+          if (!submitted) {
+            setSubmitted(true);
+            if (process.env.NODE_ENV !== 'development') {
+              grecaptcha.ready(function () {
+                grecaptcha
+                  .execute(process.env.NEXT_PUBLIC_RECAPTCHA_KEY, {
+                    action: 'create_comment',
+                  })
+                  .then(function (token) {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = 'g-recaptcha-response';
+                    input.value = token;
+                    formEl.current.appendChild(input);
+                    setTokenCreated(true);
+                    formEl.current.submit();
+                  });
+              });
+            } else {
+              formEl.current.submit();
+            }
           }
         }
-      }
-    });
+      });
+    }
   };
   return (
     <section className='contact' data-cms-bind={dataBinding} id={block.anchor}>

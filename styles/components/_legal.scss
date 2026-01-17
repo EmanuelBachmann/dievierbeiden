@@ -1,0 +1,15 @@
+.legal {
+  margin-top: 140px;
+
+  h1 {
+    margin-bottom: $lg-spacing;
+  }
+
+  &-content {
+    p {
+      margin-top: $sm-spacing;
+      margin-bottom: $md-spacing;
+      text-align: start;
+    }
+  }
+}

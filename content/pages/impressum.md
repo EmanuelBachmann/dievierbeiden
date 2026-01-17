@@ -4,7 +4,7 @@ content_blocks:
   - _bookshop_name: global/legal
     title: Impressum
     text_markdown: >-
-      **DIE VIER BEIDEN<br>**Daniel Landl und Mitges.<br>Gesellschaft
+      **DIE VIER BEIDEN**<br>Daniel Landl und Mitges.<br>Gesellschaft
       bürgerlichen Rechts (GesbR)<br>UID: 98 415/5184
 
 
@@ -14,7 +14,7 @@ content_blocks:
       kontakt@die-vier-beiden.at<br>\+43 665 65506789
 
 
-      Medieninhaber: ** ** Daniel Landl und Mitges., Ziehrerweg 5, 6850 Dornbirn
+      **Medieninhaber**<br>Daniel Landl und Mitges., Ziehrerweg 5, 6850 Dornbirn
 
 
       **Haftungsausschluss**<br>DIE VIER BEIDEN ist bemüht, die auf dieser
@@ -28,7 +28,7 @@ content_blocks:
       von DIE VIER BEIDEN gestattet.
 
 
-      **Externe Hyperlinks<br>**Auf dieser Website befinden sich Links zu
+      **Externe Hyperlink**s<br>Auf dieser Website befinden sich Links zu
       externen Webseiten Dritter. Da DIE VIER BEIDEN keinen Einfluss auf deren
       Inhalte oder Gestaltung hat, wird für diese fremden Inhalte keine
       Verantwortung übernommen. Zum Zeitpunkt der Verlinkung waren keine

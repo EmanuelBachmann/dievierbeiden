@@ -4,12 +4,16 @@ const md = new MarkdownIt({ html: true });
 
 export default function Legal({ block, dataBinding }) {
   return (
-    <section className='legal' data-cms-bind={dataBinding} id={block.anchor}>
+    <section
+      className='legal container-md'
+      data-cms-bind={dataBinding}
+      id={block.anchor}
+    >
       <h1>{block.title}</h1>
       <div
-        className='container socialmedia-container'
+        className='legal-content'
         dangerouslySetInnerHTML={{
-          __html: md.render(block.text),
+          __html: md.render(block.text_markdown),
         }}
       ></div>
     </section>

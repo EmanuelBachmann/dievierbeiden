@@ -1,10 +1,13 @@
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import data from '../../lib/data';
+import { useRouter } from 'next/router';
 
 export default function Navigation() {
   const { navigation } = data;
+  const router = useRouter();
+  const isHome = router.pathname === '/';
 
+  console.log(isHome);
   const [wasOpend, setWasOpend] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -74,6 +77,14 @@ export default function Navigation() {
     );
   };
 
+  const buildLink = (item) => {
+    if (isHome) {
+      return <a onClick={() => scrollTo(item.anchor)}>{item.title}</a>;
+    } else {
+      return <a href={`/#${item.anchor}`}>{item.title}</a>;
+    }
+  };
+
   return (
     <>
       <header>
@@ -90,9 +101,7 @@ export default function Navigation() {
               <div className='desktop-nav-items'>
                 {navigation.items.map((navItem, key) => (
                   <div className='navbar-nav-item' key={key}>
-                    <button onClick={() => scrollTo(navItem.anchor)}>
-                      {navItem.title}
-                    </button>
+                    {buildLink(navItem)}
                   </div>
                 ))}
               </div>
@@ -111,9 +120,7 @@ export default function Navigation() {
               <div className='navbar-nav-items'>
                 {navigation.items.map((navItem, key) => (
                   <div className='navbar-nav-item' key={key}>
-                    <button onClick={() => scrollTo(navItem.anchor)}>
-                      {navItem.title}
-                    </button>
+                    {buildLink(navItem)}
                   </div>
                 ))}
               </div>
