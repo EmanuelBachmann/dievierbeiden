@@ -54,10 +54,13 @@ module.exports = {
       type: 'image',
     },
     text_top: {
-      type: 'markdown'
+      type: 'markdown',
     },
     text_bottom: {
-      type: 'markdown'
+      type: 'markdown',
+    },
+    text_markdown: {
+      type: 'markdown',
     },
     featured_image: {
       comment: 'Defaults to the image set in the Site SEO data file',

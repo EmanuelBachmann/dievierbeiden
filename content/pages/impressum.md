@@ -8,5 +8,5 @@ content_blocks:
     anchor: ''
   - _bookshop_name: global/legal
     title: 'Impressum'
-    text: ''
+    text_markdown: ''
 ---
