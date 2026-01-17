@@ -69,6 +69,8 @@
           margin: $base-spacing;
           padding: $base-spacing;
           border-radius: $base-border-radius;
+          position: relative;
+          overflow: hidden;
 
           h3 {
             margin-bottom: $sm-spacing;
@@ -130,6 +132,31 @@
                   transform: translateX(0%);
                 }
               }
+            }
+          }
+
+          .bohemian-ribbon {
+            position: absolute;
+            right: -67px;
+            top: 20px;
+            padding: $xxs-spacing;
+            width: 200px;
+            background-color: $color-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(45deg);
+            &-content {
+              display: inline-block;
+              color: white;
+              text-align: center;
+              font-size: $xs-font-size;
+            }
+
+            @include media-breakpoint-up-md {
+              right: -60px;
+              top: 25px;
+              padding: $xs-spacing;
             }
           }
         }

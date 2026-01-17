@@ -72,6 +72,15 @@ export default function Dates({ block, dataBinding }) {
                         </a>
                       </div>
                     )}
+                    {date.is_bohemian && (
+                      <div className='bohemian-ribbon'>
+                        <div className='bohemian-ribbon-content'>
+                          <span>
+                            Böhmisch
+                            </span>
+                        </div>
+                      </div>
+                    )}
                   </motion.div>
                 </div>
                 {!isLast && (

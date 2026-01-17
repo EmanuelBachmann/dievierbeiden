@@ -81,14 +81,20 @@ content_blocks:
         date: 11 JUL | ab 21:00 Uhr
         location: Koblach
         is_bohemian: false
+      - title: Frühshoppen
+        date: 19 JUL | ab 11:00 Uhr
+        location: Gargellen
+        is_bohemian: true
       - title: Weinnacht Bartholomäberg
         date: 22 AUG | ab 21:00 Uhr
         location: Frastanz
         link: https://www.hm-bartholomaeberg.at
+        is_bohemian: false
       - title: Kaiserwiesn Wien
         date: 9 OKT | ab 15:00 Uhr
         location: Wien, Praterstern
         link: https://kaiserwiesn.at/
+        is_bohemian: false
     anchor: termine
   - _bookshop_name: global/socialmedia
     title: Folgst du uns schon?
