@@ -4,12 +4,12 @@ content_blocks:
   - _bookshop_name: global/hero
     background_image: /uploads/d4b-hero.jpg
     background_image_mobile: /uploads/d4b-hero-mobile-xl.jpg
-    background_image_alt: Die vier Beiden
+    background_image_alt: DIE VIER BEIDEN
     anchor: ''
   - _bookshop_name: global/introduction
-    title: Die vier Beiden
+    title: DIE VIER BEIDEN
     text_top: >-
-      Wir sind Die vier Beiden - eine junge Partyband aus dem Ländle.<br><br>
+      Wir sind DIE VIER BEIDEN - eine junge Partyband aus dem Ländle.<br><br>
       Wir machen Live-Musik für Feste, die man nicht vergisst – und sorgen von der ersten Nummer bis zur letzten Zugabe für gute Laune, volle Tanzflächen und beste Stimmung.
     text_bottom: >-
       Egal ob gemütlich oder ausgelassen – wir spielen nicht einfach ein Programm, wir begleiten euer Fest.
@@ -62,7 +62,7 @@ content_blocks:
   - _bookshop_name: global/bohemian
     title: Böhmische Formation
     text: >-
-      Neben unserem vielseitigen modernen Programm gibt es Die vier Beiden auch als reine böhmische Formation. In dieser Besetzung spielen wir ohne Sängerin und zu acht.<br><br>Mit Marsch, Polka und der ein oder anderen modernen Nummer ist diese Variante perfekt geeignet für Frühschoppen und andere traditionellere Veranstaltungen.
+      Neben unserem vielseitigen modernen Programm gibt es DIE VIER BEIDEN auch als reine böhmische Formation. In dieser Besetzung spielen wir ohne Sängerin und zu acht.<br><br>Mit Marsch, Polka und der ein oder anderen modernen Nummer ist diese Variante perfekt geeignet für Frühschoppen und andere traditionellere Veranstaltungen.
     background_image: /uploads/kilbi_mobile.jpg
     button_text: Buchen
     button_link: '#'

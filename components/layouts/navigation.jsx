@@ -86,7 +86,7 @@ export default function Navigation() {
           <div className={`navbar-shadow`}></div>
           <div className='navbar-content'>
             <div className='navbar-row'>
-              <img src={navigation.logo} alt='Die vier Beiden Logo' />
+              <img src={navigation.logo} alt='DIE VIER BEIDEN Logo' />
               <div className='desktop-nav-items'>
                 {navigation.items.map((navItem, key) => (
                   <div className='navbar-nav-item' key={key}>
