@@ -2,9 +2,10 @@ import React from 'react';
 import MarkdownIt from 'markdown-it';
 const md = new MarkdownIt({ html: true });
 
-export default function Wysiwyg({ block, dataBinding }) {
+export default function Legal({ block, dataBinding }) {
   return (
-    <section className='wysiwyg' data-cms-bind={dataBinding} id={block.anchor}>
+    <section className='legal' data-cms-bind={dataBinding} id={block.anchor}>
+      <h1>{block.title}</h1>
       <div
         className='container socialmedia-container'
         dangerouslySetInnerHTML={{
