@@ -20,16 +20,15 @@ content_blocks:
     items:
       - number: 9
         text: Musiker
-      - number: 2022
+      - number: 2023
         text: gegründet
-      - number: 51
+      - number: 28
         text: Auftritte gespielt
     anchor: fakten
   - _bookshop_name: global/members
     title: Das sind wir
     text: >-
-      Acht Musiker und eine Sängerin zwischen 18 und 29 Jahre alt und wir kommen aus ganz Vorarlberg – von Hörbranz bis Bludenz. <br>
-      Was uns verbindet, ist die Leidenschaft für Musik und echte Energie auf der Bühne.
+      Wir sind acht Musiker:innen und eine Sängerin im Alter zwischen 18 und 29 Jahren und kommen aus ganz Vorarlberg – von Hörbranz bis Bludenz. <br>Uns verbindet die Leidenschaft für Musik und die Freude daran, mit echter Energie auf der Bühne zu stehen.
     members:
       - name: Emanuel Bachmann
         instrument: Trompete
@@ -62,7 +61,7 @@ content_blocks:
   - _bookshop_name: global/bohemian
     title: Böhmische Formation
     text: >-
-      Neben unserem vielseitigen modernen Programm gibt es DIE VIER BEIDEN auch als reine böhmische Formation. In dieser Besetzung spielen wir ohne Sängerin und zu acht.<br><br>Mit Marsch, Polka und der ein oder anderen modernen Nummer ist diese Variante perfekt geeignet für Frühschoppen und andere traditionellere Veranstaltungen.
+      Neben unserem vielseitigen modernen Programm gibt es DIE VIER BEIDEN auch als reine böhmische Formation. In dieser Besetzung spielen wir zu acht.<br><br>Mit Marsch, Polka und der ein oder anderen modernen Nummer ist diese Variante perfekt geeignet für Frühschoppen und andere traditionellere Veranstaltungen.
     background_image: /uploads/kilbi_mobile.jpg
     button_text: Buchen
     button_link: '#'
