@@ -23,7 +23,7 @@ export default function DefaultLayout({ children, page }) {
         />
       </Head>
       <NextSeo
-        noindex={page.data.title !== 'Home'}
+        noindex={!page || page.data.title !== 'Home'}
         title={title}
         description={description}
         openGraph={
