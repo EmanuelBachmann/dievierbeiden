@@ -4,43 +4,79 @@ content_blocks:
   - _bookshop_name: global/legal
     title: Impressum
     text_markdown: >-
-      **DIE VIER BEIDEN**<br>Daniel Landl und Mitges.<br>Gesellschaft
-      bürgerlichen Rechts (GesbR)<br>UID: 98 415/5184
+      **Datenschutzerklärung**<br>Der Schutz Ihrer personenbezogenen Daten ist
+      uns ein wichtiges Anliegen. Wir verarbeiten Ihre Daten ausschließlich im
+      Einklang mit den geltenden gesetzlichen Bestimmungen, insbesondere der
+      Datenschutz-Grundverordnung (DSGVO) und dem Telekommunikationsgesetz (TKG
+      2003). In dieser Datenschutzerklärung informieren wir Sie über Art, Umfang
+      und Zweck der Verarbeitung personenbezogener Daten im Zusammenhang mit
+      unserer Website.
 
 
-      Ziehrerweg 5<br>6850 Dornbirn<br>Österreich
+      **Kontaktaufnahme mit uns**<br>Wenn Sie über ein Kontaktformular auf
+      unserer Website oder per E-Mail mit uns in Verbindung treten, speichern
+      wir die von Ihnen angegebenen Daten zur Bearbeitung Ihrer Anfrage sowie
+      für mögliche Anschlussfragen. Eine Weitergabe dieser Daten an Dritte
+      erfolgt nicht ohne Ihre ausdrückliche Zustimmung, sofern keine gesetzliche
+      Verpflichtung besteht.
 
 
-      kontakt@die-vier-beiden.at<br>\+43 665 65506789
+      **Datenspeicherung und -verarbeitung**<br>Zum Zweck der Vertragsabwicklung
+      speichern und verarbeiten wir gegebenenfalls folgende personenbezogene
+      Daten: Name, Adresse, Telefonnummer und E-Mail-Adresse.
 
 
-      **Medieninhaber**<br>Daniel Landl und Mitges., Ziehrerweg 5, 6850 Dornbirn
+      Diese Daten sind erforderlich, um einen Vertrag mit Ihnen abzuschließen
+      bzw. vorvertragliche Maßnahmen durchzuführen. Ohne Bereitstellung dieser
+      Daten ist ein Vertragsabschluss nicht möglich.
 
 
-      **Haftungsausschluss**<br>DIE VIER BEIDEN ist bemüht, die auf dieser
-      Website bereitgestellten Informationen sorgfältig zu prüfen und aktuell zu
-      halten. Dennoch können Fehler oder Unvollständigkeiten nicht
-      ausgeschlossen werden. Eine Haftung oder Garantie für die Richtigkeit,
-      Aktualität und Vollständigkeit der Inhalte wird daher nicht
-      übernommen.<br>Sämtliche Inhalte dieser Website unterliegen dem
-      Urheberrecht. Die Verwendung, Vervielfältigung oder Weitergabe von Texten,
-      Bildern oder sonstigen Materialien ist nur mit ausdrücklicher Zustimmung
-      von DIE VIER BEIDEN gestattet.
+      Eine Weitergabe Ihrer Daten an Dritte erfolgt grundsätzlich nicht.
+      Ausgenommen davon ist eine Übermittlung an unseren Steuerberater, sofern
+      dies zur Erfüllung unserer steuerrechtlichen Verpflichtungen erforderlich
+      ist.
 
 
-      **Externe Hyperlink**s<br>Auf dieser Website befinden sich Links zu
-      externen Webseiten Dritter. Da DIE VIER BEIDEN keinen Einfluss auf deren
-      Inhalte oder Gestaltung hat, wird für diese fremden Inhalte keine
-      Verantwortung übernommen. Zum Zeitpunkt der Verlinkung waren keine
-      rechtswidrigen Inhalte erkennbar. Eine permanente Kontrolle der verlinkten
-      Seiten ist jedoch nicht möglich.
+      Die Verarbeitung Ihrer Daten erfolgt auf Grundlage von:
 
 
-      **Fotos**<br>Elke Lenz<br>Matthias Rhomberg
+      * Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und/oder
+
+      * Art. 6 Abs. 1 lit. b DSGVO (Erforderlichkeit zur Vertragserfüllung)
+      sowie
+
+      * § 96 Abs. 3 TKG 2003, sofern anwendbar.
 
 
-      **Website-Design**<br>Emanuel Bachmann<br>Viktoria Bachmann
+      **Ihre Rechte**<br>Sie haben grundsätzlich folgende Rechte in Bezug auf
+      Ihre bei uns gespeicherten personenbezogenen Daten:
 
 
-      **Website-Programmierung**<br>Emanuel Bachmann
+      * Recht auf Auskunft
+
+      * Recht auf Berichtigung
+
+      * Recht auf Löschung („Recht auf Vergessenwerden“)
+
+      * Recht auf Einschränkung der Verarbeitung
+
+      * Recht auf Datenübertragbarkeit
+
+      * Recht auf Widerruf Ihrer Einwilligung
+
+      * Recht auf Widerspruch gegen die Verarbeitung
+
+
+      Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen
+      geltendes Datenschutzrecht verstößt oder Ihre Rechte verletzt wurden,
+      können Sie sich entweder direkt an uns oder an die Österreichische
+      Datenschutzbehörde wenden.
+
+
+      Sie erreichen uns unter folgenden Kontaktdaten:
+
+
+      DIE VIER BEIDEN <br>Daniel Landl und Mitges.<br>Ziehrerweg 5<br>6850
+      Dornbirn<br>E-Mail: kontakt@die-vier-beiden.at<br>Telefon: +43 665
+      65506789
 ---
