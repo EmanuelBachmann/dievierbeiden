@@ -3,6 +3,11 @@
 
   h1 {
     margin-bottom: $lg-spacing;
+    font-size: $xl-font-size;
+
+    @include media-breakpoint-down-md {
+        font-size: $xl-mobile-font-size;
+    }
   }
 
   &-content {

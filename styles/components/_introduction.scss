@@ -20,6 +20,17 @@
       grid-template-columns: 1fr;
       gap: $md-spacing;
 
+      .introduction-img {
+        img {
+          aspect-ratio: 15 / 10;
+          background: white;
+        }
+      }
+
+      @include media-breakpoint-down-lg {
+        max-width: 700px;
+      }
+
       @include media-breakpoint-up-lg {
         grid-template-columns: 1fr 1fr;
         margin-top: $md-spacing;

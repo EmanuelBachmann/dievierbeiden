@@ -12,9 +12,14 @@
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    max-height: 92.5vh;
-    min-height: calc(100vw * 0.48) !important;
+    max-height: calc(100vh - 50px) !important;
     object-fit: cover;
+    aspect-ratio: 555 / 637;
+
+    @include media-breakpoint-up-md {
+      aspect-ratio: 2360 / 1575;
+      max-height: calc(100vh - 70px) !important;
+    }
   }
 
   .hero-bottom-gradient {
@@ -25,19 +30,19 @@
     width: 100%;
     background: linear-gradient(to bottom, transparent 0%, white 100%);
 
-    @include media-breakpoint-up-lg {
-      height: 25%;
+    @include media-breakpoint-up-md {
+      height: 20%;
     }
   }
 
   .hero-image-mobile {
-    @include media-breakpoint-up-lg {
+    @include media-breakpoint-up-md {
       display: none;
     }
   }
 
   .hero-image-desktop {
-    @include media-breakpoint-down-lg {
+    @include media-breakpoint-down-md {
       display: none;
     }
   }

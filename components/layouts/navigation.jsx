@@ -7,7 +7,6 @@ export default function Navigation() {
   const router = useRouter();
   const isHome = router.pathname === '/';
 
-  console.log(isHome);
   const [wasOpend, setWasOpend] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
