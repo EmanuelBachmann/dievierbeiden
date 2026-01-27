@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import Navigation from './navigation';
 import Footer from './footer';
 
-export default function DefaultLayout({ children, page }) {
+export default function DefaultLayout({ children, page, noFooter = false }) {
   const title = data.site.site_title;
   const description = data.site.description;
   const image = data.site.image;
@@ -64,7 +64,7 @@ export default function DefaultLayout({ children, page }) {
       />
       <Navigation />
       {children}
-      <Footer />
+      {!noFooter && <Footer />}
     </>
   );
 }

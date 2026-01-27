@@ -114,3 +114,45 @@ h3,
 .grecaptcha-badge {
   display: none !important;
 }
+
+.container-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+
+  h1 {
+    margin-bottom: $lg-spacing;
+    font-size: $xl-font-size;
+
+    @include media-breakpoint-down-md {
+      font-size: $xl-mobile-font-size;
+    }
+  }
+
+  p {
+    margin-bottom: $lg-spacing;
+  }
+
+  a {
+    align-self: flex-start;
+    background: $color-primary;
+    color: #fff;
+    border: none;
+    padding: $sm-spacing $base-spacing;
+    border-radius: $sm-border-radius;
+    cursor: pointer;
+    font-size: $base-font-size;
+    font-family: inherit;
+    margin: auto;
+    text-decoration: none;
+
+    @include media-breakpoint-up-lg {
+      transition: box-shadow 0.25s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px $color-primary;
+      }
+    }
+  }
+}
