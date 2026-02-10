@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 
 const GalleryMobileItem = ({ imageItem }) => {
   const itemRef = useRef(null);
@@ -14,7 +14,7 @@ const GalleryMobileItem = ({ imageItem }) => {
       },
       {
         threshold: [0, 0.6, 1],
-        rootMargin: "-30% 0px -30% 0px",
+        rootMargin: '-30% 0px -30% 0px',
       }
     );
 
@@ -26,11 +26,11 @@ const GalleryMobileItem = ({ imageItem }) => {
   return (
     <div
       ref={itemRef}
-      className={`gallery-mobile-item ${isCentered ? "is-centered" : ""}`}
+      className={`gallery-mobile-item ${isCentered ? 'is-centered' : ''}`}
     >
       <img
-        className="hero-image hero-image-mobile"
-        src={imageItem.image_mobile}
+        className='hero-image hero-image-mobile'
+        src={imageItem.image}
         alt={imageItem.title}
       />
       <div className='gallery-mobile-item-overlay'>

@@ -50,7 +50,7 @@ export default function Dates({ block, dataBinding }) {
                     initial={isRight ? 'hiddenRight' : 'hiddenLeft'}
                     whileInView='visible'
                     viewport={{ once: true, amount: 0.4 }}
-                    className='dates-item-content-container'
+                    className={`dates-item-content-container ${date.is_bohemian ? 'is-bohemian' : ''}`}
                   >
                     <h3>{date.title}</h3>
                     <div className='dates-item-content-icon-container'>

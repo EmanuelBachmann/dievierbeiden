@@ -5,10 +5,14 @@
   display: grid;
   grid-template-columns: 1fr;
 
-  @include media-breakpoint-up-lg {
+  @include media-breakpoint-up-md {
     margin-top: $xl-spacing;
     margin-bottom: $xl-spacing;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-breakpoint-up-xl {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .gallery-mobile-item {

@@ -28,35 +28,35 @@ content_blocks:
   - _bookshop_name: global/members
     title: Das sind wir
     text: >-
-      Wir sind acht Musiker:innen und eine Sängerin im Alter zwischen 18 und 29 Jahren und kommen aus ganz Vorarlberg – von Hörbranz bis Bludenz. <br>Uns verbindet die Leidenschaft für Musik und die Freude daran, mit echter Energie auf der Bühne zu stehen.
+      Wir sind acht Musiker und eine Sängerin im Alter zwischen 18 und 29 Jahren und kommen aus ganz Vorarlberg – von Hörbranz bis Bludenz. <br>Uns verbindet die Leidenschaft für Musik und die Freude daran, mit echter Energie auf der Bühne zu stehen.
     members:
       - name: Emanuel Bachmann
         instrument: Trompete
-        image: /uploads/Emanuel.jpg
+        image: /uploads/members/Emanuel.jpg
       - name: Jonas Panzenböck
         instrument: Trompete / Flügelhorn
-        image: /uploads/Jonas.jpg
+        image: /uploads/members/Jonas.jpg
       - name: Daniel Landl
         instrument: Trompete / Flügelhorn
-        image: /uploads/Daniel.jpg
+        image: /uploads/members/Daniel.jpg
       - name: Ida Nenning
         instrument: Gesang
-        image: /uploads/Ida.jpg
+        image: /uploads/members/Ida.jpg
       - name: Vinzenz Walser
         instrument: Tuba
-        image: /uploads/Vinz.jpg
+        image: /uploads/members/Vinz.jpg
       - name: Max Kofler
         instrument: Schlagzeug
-        image: /uploads/Max.jpg
+        image: /uploads/members/Max.jpg
       - name: Jakob Klien
         instrument: Posaune / Tenorhorn
-        image: /uploads/Jakob.jpg
+        image: /uploads/members/Jakob.jpg
       - name: Julian Meznar
         instrument: Posaune / Tenorhorn
-        image: /uploads/Julian.jpg
+        image: /uploads/members/Julian.jpg
       - name: David Beinat
         instrument: Posaune / Tenorhorn
-        image: /uploads/David.jpg
+        image: /uploads/members/David.jpg
     anchor: das_sind_wir
   - _bookshop_name: global/bohemian
     title: Böhmische Formation
@@ -72,28 +72,35 @@ content_blocks:
       Du willst uns live erleben?<br>Hier findest du unsere nächsten Auftritte.<br>Komm vorbei, hör rein und feier mit uns – wir freuen uns über bekannte und neue Gesichter.
     icon: /uploads/d4b_logo_quadrat_gold_transparent_icon.png
     dates:
-      - title: Winterwiesn Schnifis
-        date: 17 JAN | ab 19:30 Uhr
-        location: Schnifis
+      - title: Frühshoppen KSK Klaus
+        date: 10 MAI | ab 13:00 Uhr
+        location: Klaus
+        is_bohemian: true
+      - title: 170 Jahre Bürgermusik Schwarzach
+        date: 6 JUN | ab 20:00 Uhr
+        location: Schwarzach Dorfplatz
         is_bohemian: false
-        link: http://www.gm-schnifis.at/v3/aktuelles/192-save-the-date-winterwiesn-2026
-      - title: 140 Jahre SchützenMV Koblach
+      - title: Waldfest Tisis
+        date: 27 JUN | ab 20:00 Uhr
+        location: Tisis Alte Säge
+        is_bohemian: false
+        link: https://www.hm-tito.at/veranstaltung/waldfest/
+      - title: 140 Jahre Schützenmusikverein Koblach
         date: 11 JUL | ab 21:00 Uhr
         location: Koblach
         is_bohemian: false
-      - title: Frühshoppen
+      - title: Frühschoppen Gargellen
         date: 19 JUL | ab 11:00 Uhr
-        location: Gargellen
+        location: Sonnenterasse des Schafberg Hüsli
         is_bohemian: true
+      - title: Sommerfest Fraxern
+        date: 8 AUG | ab 19:00 Uhr
+        location: Jugenbühne Fraxern
+        is_bohemian: false
       - title: Weinnacht Bartholomäberg
         date: 22 AUG | ab 21:00 Uhr
         location: Frastanz
         link: https://www.hm-bartholomaeberg.at
-        is_bohemian: false
-      - title: Kaiserwiesn Wien
-        date: 9 OKT | ab 15:00 Uhr
-        location: Wien, Praterstern
-        link: https://kaiserwiesn.at/
         is_bohemian: false
     anchor: termine
   - _bookshop_name: global/socialmedia
@@ -110,18 +117,18 @@ content_blocks:
     success_message: Danke für Ihre Kontaktanfrage. Wir werden uns bald bei Ihnen melden.
   - _bookshop_name: global/gallery
     images:
-      - image: /uploads/szene_black_white.jpg
-        image_mobile: /uploads/szene_black_white_mobile.jpg
+      - image: /uploads/gallery/szene_black_white.jpg
         title: Szene Openair
-      - image: /uploads/rohrbach.jpg
-        image_mobile: /uploads/rohrbach_mobile.jpg
+      - image: /uploads/gallery/rohrbach.jpg
         title: Rohrbacher Musighock
-      - image: /uploads/wagner_firmenfest.jpg
-        image_mobile: /uploads/wagner_firmenfest_mobile.jpg
-        title: Wagner Sommerfest
-      - image: /uploads/nenzing_jubilaeum.jpg
-        image_mobile: /uploads/nenzing_jubilaeum_mobile.jpg
-        title: 100 Jahre BMG Nenzing
+      - image: /uploads/gallery/nueziders_sommerfest.jpg
+        title: Nüziders Sommerfest
+      - image: /uploads/gallery/nenzing_jubilaeum.jpg
+        title: 125 Jahre BMG Nenzing
+      - image: /uploads/gallery/weinfest_batschuns.jpg
+        title: Weinfest Batschuns
+      - image: /uploads/gallery/winterwiesn_schnifis.jpg
+        title: Winterwiesn Schnifis
     anchor: gallerie
   - _bookshop_name: global/setlist
     title: Setlist

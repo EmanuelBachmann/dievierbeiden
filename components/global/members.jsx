@@ -105,7 +105,7 @@ export default function Members({ block, dataBinding }) {
                   <img
                     className='members-card-img'
                     src={member.image}
-                    alt={members.name}
+                    alt={member.name}
                   />
 
                   <div className='members-card-content'>
