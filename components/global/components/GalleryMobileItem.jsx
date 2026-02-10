@@ -6,7 +6,7 @@ const GalleryMobileItem = ({ imageItem }) => {
 
   useEffect(() => {
     // Mobile only
-    if (window.innerWidth >= 768) return;
+    if (window.innerWidth > 992) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
