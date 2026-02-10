@@ -20,7 +20,7 @@ content_blocks:
   - _bookshop_name: global/counter
     items:
       - number: 9
-        text: Musiker
+        text: Musiker:innen
       - number: 2023
         text: gegründet
       - number: 28
