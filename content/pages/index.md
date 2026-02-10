@@ -98,10 +98,9 @@ content_blocks:
         date: 8 AUG | ab 19:00 Uhr
         location: Jugenbühne Fraxern
         is_bohemian: false
-      - title: Weinnacht Bartholomäberg
+      - title: Bärger Weinnacht
         date: 22 AUG | ab 21:00 Uhr
-        location: Frastanz
-        link: https://www.hm-bartholomaeberg.at
+        location: Bartholomäberg
         is_bohemian: false
     anchor: termine
   - _bookshop_name: global/socialmedia
