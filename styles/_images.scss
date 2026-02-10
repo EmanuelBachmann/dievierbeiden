@@ -1,0 +1,12 @@
+.shimmer-image-container {
+  position: relative;
+  padding: 7px;
+  background: $color-primary;;
+  border-radius: $base-border-radius;
+  display: flex;
+
+  .shimmer-image {
+    width: 100%;
+    border-radius: calc(#{$base-border-radius} - 3.5px);
+  }
+}

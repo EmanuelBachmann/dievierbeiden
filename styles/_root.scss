@@ -8,20 +8,37 @@ body:not(.loaded) * {
   animation: none !important;
 }
 
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 /*Font */
 body {
   font-size: $base-font-size;
   font-weight: $regular-font-weight;
-  letter-spacing: $base-letter-spacing;
+  // letter-spacing: $base-letter-spacing;
   color: $color-text;
   background: $color-white;
   margin: 0 !important;
+  overflow-x: auto;
+  max-width: 100vw;
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 p {
   font-size: $base-font-size;
   line-height: 1.3;
   margin: 0;
+  color: $color-text;
+  text-align: center;
+}
+
+a {
   color: $color-text;
 }
 
@@ -30,12 +47,10 @@ h1,
 h2,
 .h2,
 h3,
-.h3,
-h4,
-.h4 {
+.h3 {
   line-height: 1.2;
   font-weight: $semibold-font-weight;
-  letter-spacing: $lg-letter-spacing;
+  // letter-spacing: $lg-letter-spacing;
   text-transform: uppercase;
   margin: 0;
   text-align: center;
@@ -45,7 +60,8 @@ h1,
 .h1 {
   font-size: $xxl-font-size;
   color: $color-primary;
-  line-height: 1.1;
+  line-height: 1.05;
+  font-weight: bold;
 
   @include media-breakpoint-down-md {
     font-size: $xxl-mobile-font-size;
@@ -72,8 +88,71 @@ h3,
   }
 }
 
-h4,
-.h4 {
-  font-size: $md-font-size;
-  color: $color-text;
+.Toastify__toast-container {
+  right: 0 !important;
+  padding-right: 0.75rem !important;
+  padding-left: 0.75rem !important;
+  margin-top: 85px !important;
+  --toastify-color-progress-success: #{$color-primary} !important;
+  --toastify-icon-color-success: #{$color-primary} !important;
+  // --toastify-color-progress-bgo: 1 !important;
+  font-size: $base-font-size !important;
+
+  .Toastify__toast {
+    border-radius: $sm-border-radius !important;
+    font-size: $sm-font-size;
+    padding-right: 20px;
+    font-family: inherit;
+    color: $color-text;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: 100px !important;
+  }
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+.container-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+
+  h1 {
+    margin-bottom: $lg-spacing;
+    font-size: $xl-font-size;
+
+    @include media-breakpoint-down-md {
+      font-size: $xl-mobile-font-size;
+    }
+  }
+
+  p {
+    margin-bottom: $lg-spacing;
+  }
+
+  a {
+    align-self: flex-start;
+    background: $color-primary;
+    color: #fff;
+    border: none;
+    padding: $sm-spacing $base-spacing;
+    border-radius: $sm-border-radius;
+    cursor: pointer;
+    font-size: $base-font-size;
+    font-family: inherit;
+    margin: auto;
+    text-decoration: none;
+
+    @include media-breakpoint-up-lg {
+      transition: box-shadow 0.25s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0 10px $color-primary;
+      }
+    }
+  }
 }

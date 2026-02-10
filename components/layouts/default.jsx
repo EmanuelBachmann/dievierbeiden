@@ -4,32 +4,14 @@ import { NextSeo } from 'next-seo';
 // import Footer from './footer';
 import data from '../../lib/data';
 import { useEffect, useState } from 'react';
+import Navigation from './navigation';
+import Footer from './footer';
 
-export default function DefaultLayout({ children, page }) {
-  // const [unauth, setUnauth] = useState(true);
-
-  const title = page?.data.title
-    ? `${page.data.title} | ${data.site.site_short_title}`
-    : data.site.site_title;
-  const description = page?.data.seo?.page_description || data.site.description;
-  const image = page?.data.seo?.feature_image || data.site.image;
-  const image_alt = page?.data.seo?.feature_image_alt || data.site.image_alt;
-
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     const password =
-  //       localStorage.getItem('pagePassword') || window.prompt('Passwort:', '');
-
-  //     if (password === 'tumorhorn') {
-  //       setUnauth(false);
-  //       localStorage.setItem('pagePassword', password);
-  //     }
-  //   }
-  // }, []);
-
-  // if (unauth) {
-  //   return;
-  // }
+export default function DefaultLayout({ children, page, noFooter = false }) {
+  const title = data.site.site_title;
+  const description = data.site.description;
+  const image = data.site.image;
+  const image_alt = data.site.image_alt;
 
   return (
     <>
@@ -41,7 +23,7 @@ export default function DefaultLayout({ children, page }) {
         />
       </Head>
       <NextSeo
-        noindex={!page || page.data.seo?.no_index || false}
+        noindex={!page || page.data.title !== 'Home'}
         title={title}
         description={description}
         openGraph={
@@ -80,9 +62,9 @@ export default function DefaultLayout({ children, page }) {
           },
         ]}
       />
-      {/* <Navigation /> */}
+      <Navigation />
       {children}
-      {/* <Footer /> */}
+      {!noFooter && <Footer />}
     </>
   );
 }

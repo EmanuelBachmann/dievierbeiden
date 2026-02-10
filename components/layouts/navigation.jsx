@@ -1,17 +1,18 @@
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import data from '../../lib/data';
+import { useRouter } from 'next/router';
 
 export default function Navigation() {
   const { navigation } = data;
+  const router = useRouter();
+  const isHome = router.pathname === '/';
 
+  const [wasOpend, setWasOpend] = useState(false);
   const [isSticky, setSticky] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleScroll = () => {
-    if (window.innerWidth > 992) {
-      closeNavbarIfOpen();
-    }
-    setSticky(window.scrollY >= 70);
+    setSticky(window.scrollY > 0);
   };
 
   useEffect(() => {
@@ -25,82 +26,105 @@ export default function Navigation() {
     }
   }, []);
 
+  const handleNavbarToggle = () => {
+    if (!wasOpend && !isOpen) {
+      setWasOpend(true);
+    }
+
+    if (!isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    setIsOpen(!isOpen);
+  };
+
+  function scrollTo(id) {
+    if (typeof document === 'undefined') return;
+
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    handleNavbarToggle();
+    el.scrollIntoView({ behavior: 'smooth' });
+
+    // remove hash from URL without reloading
+    history.replaceState(null, '', window.location.pathname);
+  }
+
+  const buildContact = () => {
+    return (
+      <>
+        <a href={data.footer.instagram_url} target='_blank'>
+          <i aria-hidden className='fa-brands fa-instagram'></i>
+        </a>
+        <a
+          href={data.footer.facebook_url}
+          target='_blank'
+          className='mobile-only'
+        >
+          <i aria-hidden className='fa-brands fa-facebook'></i>
+        </a>
+        <a href={`mailto:${data.footer.email}`}>
+          <i aria-hidden className='fa-solid fa-envelope'></i>
+        </a>
+        <a href={`tel:${data.footer.phone}`} className='mobile-only'>
+          <i aria-hidden className='fa-solid fa-phone'></i>
+        </a>
+      </>
+    );
+  };
+
+  const buildLink = (item) => {
+    if (isHome) {
+      return <a onClick={() => scrollTo(item.anchor)}>{item.title}</a>;
+    } else {
+      return <a href={`/#${item.anchor}`}>{item.title}</a>;
+    }
+  };
+
   return (
     <>
       <header>
         <nav
-          className={`navbar navbar-expand-lg ${isSticky ? ' sticky-nav' : ''}`}
+          className={`navbar ${isSticky || isOpen ? 'sticky' : ''} ${
+            wasOpend ? (isOpen ? 'open' : 'closed') : ''
+          } ${!isSticky ? 'not-scrolled' : ''}`}
           id='mainnavigationBar'
         >
-          <div className='container-xl'>
-            <div className='d-block navbar-info'>
-              <div className='d-none d-lg-block nav-item'>
-                <Link
-                  href={`${navigation.button.link}`}
-                  className='btn btn-sm btn-links btn-img'
-                >
-                  <div className='btn-img-img'>
-                    <img src={navigation.logo} alt='Nav-Logo-White'></img>
+          <div className={`navbar-shadow`}></div>
+          <div className='navbar-content'>
+            <div className='navbar-row'>
+              <img src={navigation.logo} alt='DIE VIER BEIDEN Logo' />
+              <div className='desktop-nav-items'>
+                {navigation.items.map((navItem, key) => (
+                  <div className='navbar-nav-item' key={key}>
+                    {buildLink(navItem)}
                   </div>
-                  <span className='btn-img-text'>{navigation.button.text}</span>
-                </Link>
+                ))}
               </div>
+              <div className='desktop-nav-links'>{buildContact()}</div>
+              <button
+                className={`burger-btn`}
+                type='button'
+                onClick={handleNavbarToggle}
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </div>
-            <Link className='navbar-brand' href={'/'}>
-              <img src={navigation.logo} alt='Nav-Logo' />
-            </Link>
-            <div className='d-block navbar-info'>
-              <ul className='navbar-nav'>
-                {navigation.shop.active && (
-                  <div
-                    className='d-none d-lg-block navbar-nav-link'
-                    id='nav-item-shop'
-                  >
-                    <Link href={navigation.shop.link}>
-                      {navigation.shop.text}
-                    </Link>
-                    {navigation.shop.resale_area.active && (
-                      <div className='navbar-resale-container'>
-                        <Link href={navigation.shop.resale_area.link}>
-                          {navigation.shop.resale_area.text}
-                        </Link>
-                      </div>
-                    )}
+            <div className='navbar-open-content'>
+              <div className='navbar-nav-items'>
+                {navigation.items.map((navItem, key) => (
+                  <div className='navbar-nav-item' key={key}>
+                    {buildLink(navItem)}
                   </div>
-                )}
-                {navigation.phone.active && (
-                  <div className='d-none d-lg-flex navbar-nav-link'>
-                    <Link href={`tel:${navigation.phone.value}`}>
-                      <i className='ph-phone-light' aria-hidden='true'>
-                        <span className='visually-hidden'>Phone</span>
-                      </i>
-                    </Link>
-                  </div>
-                )}
-                {navigation.events.active && (
-                  <div className='d-none d-lg-flex navbar-nav-link'>
-                    <Link href={navigation.events.link}>
-                      {navigation.events.text}
-                    </Link>
-                  </div>
-                )}
-                {navigation.imageItem.active && (
-                  <div className='d-none d-lg-block navbar-nav-link'>
-                    <Link href={navigation.imageItem.link}>
-                      <img
-                        src={navigation.imageItem.image}
-                        alt={navigation.alt}
-                      />
-                    </Link>
-                  </div>
-                )}
-              </ul>
+                ))}
+              </div>
+              <div className='navbar-nav-footer'>{buildContact()}</div>
             </div>
-          </div>
-          <div
-            className={`container-xl d-flex subbar ${isSticky ? ' hide' : ''}`}
-          >
-            <img src={navigation.header} alt='Nav-Header' />{' '}
           </div>
         </nav>
       </header>

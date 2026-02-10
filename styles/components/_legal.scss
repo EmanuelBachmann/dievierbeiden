@@ -1,0 +1,24 @@
+.legal {
+  margin-top: 140px;
+
+  h1 {
+    margin-bottom: $lg-spacing;
+    font-size: $xl-font-size;
+
+    @include media-breakpoint-down-md {
+        font-size: $xl-mobile-font-size;
+    }
+  }
+
+  &-content {
+    p {
+      margin-top: $sm-spacing;
+      margin-bottom: $md-spacing;
+      text-align: start;
+    }
+
+    strong {
+        font-weight: 600;
+    }
+  }
+}

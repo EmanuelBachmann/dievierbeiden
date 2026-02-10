@@ -1,3 +1,25 @@
 {
-	"logo": "/uploads/d4b_logo_quadrat_gold_transparent.png"
+	"logo": "/uploads/d4b_logo_quadrat_black_transparent.png",
+	"items": [
+		{
+			"title": "DIE VIER BEIDEN",
+			"anchor": "die_vier_beiden"
+		},
+		{
+			"title": "Über uns",
+			"anchor": "das_sind_wir"
+		},
+		{
+			"title": "Böhmisch",
+			"anchor": "boehmisch"
+		},
+		{
+			"title": "Termine",
+			"anchor": "termine"
+		},
+		{
+			"title": "Kontakt",
+			"anchor": "kontakt"
+		}
+	]
 }

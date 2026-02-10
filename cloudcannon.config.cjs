@@ -50,6 +50,18 @@ module.exports = {
     background_image: {
       type: 'image',
     },
+    background_image_mobile: {
+      type: 'image',
+    },
+    text_top: {
+      type: 'markdown',
+    },
+    text_bottom: {
+      type: 'markdown',
+    },
+    text_markdown: {
+      type: 'markdown',
+    },
     featured_image: {
       comment: 'Defaults to the image set in the Site SEO data file',
     },
@@ -60,9 +72,6 @@ module.exports = {
       type: 'checkbox',
       comment:
         'When selected this removes the page from your sitemap and adds the noindex robots meta tag',
-    },
-    content: {
-      type: 'markdown',
     },
   },
 };

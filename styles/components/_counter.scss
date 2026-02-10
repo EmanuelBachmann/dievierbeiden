@@ -1,0 +1,38 @@
+.counter {
+  background: $color-primary;
+  display: flex;
+  margin-top: $lg-spacing;
+  margin-bottom: $lg-spacing;
+  padding-top: $lg-spacing;
+  padding-bottom: $lg-spacing;
+  scroll-margin-top: $scroll-offset;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $lg-spacing;
+  }
+
+  &-item {
+    text-align: center;
+    font-weight: bolder;
+    min-width: 150px;
+
+    &-number {
+      font-size: $xl-font-size;
+    }
+  }
+
+  @include media-breakpoint-up-lg {
+    margin-top: $xl-spacing;
+    margin-bottom: $xl-spacing;
+    padding-top: $xl-spacing;
+    padding-bottom: $xl-spacing;
+
+    .counter-container {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+}

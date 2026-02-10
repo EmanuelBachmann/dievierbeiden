@@ -1,0 +1,61 @@
+.bohemian {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  position: relative;
+  display: flex;
+  margin-top: $lg-spacing;
+  margin-bottom: $lg-spacing;
+  scroll-margin-top: $scroll-offset;
+  min-height: calc(100vw * 0.33);
+
+  @include media-breakpoint-up-lg {
+    margin-top: $xl-spacing;
+    margin-bottom: $xl-spacing;
+  }
+
+  .bohemian-overlay {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .bohemian-content {
+    padding-top: $lg-spacing;
+    padding-bottom: $lg-spacing;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    height: 100%;
+
+    p {
+      margin-top: $sm-spacing;
+      color: white;
+      margin-bottom: $md-spacing;
+    }
+
+    button {
+      padding: $sm-spacing $base-spacing;
+      color: white;
+      border-radius: $sm-border-radius;
+      border: 1px solid white;
+      background: none;
+      margin: 0;
+      font: inherit;
+      text-align: inherit;
+      cursor: pointer;
+
+      @include media-breakpoint-up-lg {
+        transition: box-shadow 0.25s ease-in-out;
+
+        &:hover {
+          box-shadow: 0 0 10px $color-white;
+        }
+      }
+    }
+  }
+}
