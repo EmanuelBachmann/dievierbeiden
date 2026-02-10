@@ -26,6 +26,11 @@ export default function Hero({ block, dataBinding }) {
         alt={block.background_alt}
       ></img>
       <img
+        className='hero-image hero-image-tablet'
+        src={block.background_image_tablet}
+        alt={block.background_alt}
+      ></img>
+      <img
         className='hero-image hero-image-mobile'
         src={block.background_image_mobile}
         alt={block.background_alt}
