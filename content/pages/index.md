@@ -105,8 +105,6 @@ content_blocks:
     anchor: termine
   - _bookshop_name: global/socialmedia
     title: Folgst du uns schon?
-    instagram_url: https://instagram.com/die4beiden
-    facebook_url: https://www.facebook.com/p/Die-4-Beiden-61558468670246/
     anchor: socialmedia
   - _bookshop_name: global/contact
     title: Kontakt
