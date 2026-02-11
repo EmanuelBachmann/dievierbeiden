@@ -122,7 +122,7 @@ content_blocks:
       - image: /uploads/gallery/nueziders_sommerfest.jpg
         title: Nüziders Sommerfest
       - image: /uploads/gallery/nenzing_jubilaeum.jpg
-        title: 125 Jahre BMG Nenzing
+        title: 125 Jahre BMV Nenzing
       - image: /uploads/gallery/weinfest_batschuns.jpg
         title: Weinfest Batschuns
       - image: /uploads/gallery/winterwiesn_schnifis.jpg
