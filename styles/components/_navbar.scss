@@ -93,6 +93,8 @@
       i {
         font-size: 25px;
         transition: transform 0.25s ease-in-out;
+        will-change: transform;
+        transform: translateZ(0);
       }
 
       &:hover {
