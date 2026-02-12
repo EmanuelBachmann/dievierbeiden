@@ -3,20 +3,21 @@ import MarkdownIt from 'markdown-it';
 const md = new MarkdownIt({ html: true });
 
 export default function Hero({ block, dataBinding }) {
-  const [init, setInit] = useState(false);
+  // const [init, setInit] = useState(false);
 
-  useEffect(() => {
-    const img = new Image();
-    img.src = block.background_image;
-    img.style.display = 'none';
-    img.onload = () => {
-      setInit(true);
-    };
-  }, [block.background_image]);
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.src = block.background_image;
+  //   img.style.display = 'none';
+  //   img.onload = () => {
+  //     setInit(true);
+  //   };
+  // }, [block.background_image]);
 
   return (
     <section
-      className={`hero  ${init ? 'initialized' : ''}`}
+      // ${init ? 'initialized' : ''}
+      className={'hero'}
       data-cms-bind={dataBinding}
       id={block.anchor}
     >
@@ -24,7 +25,7 @@ export default function Hero({ block, dataBinding }) {
         className='hero-image hero-image-desktop'
         src={block.background_image}
         alt={block.background_alt}
-      ></img>
+      />
       <img
         className='hero-image hero-image-tablet'
         src={block.background_image_tablet}
