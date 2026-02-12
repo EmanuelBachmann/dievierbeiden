@@ -5,7 +5,7 @@ export default function Footer({}) {
   return (
     <footer className='footer' id='footer'>
       <div className='container-xl footer-container'>
-        <img className='footer-logo' src={footer.logo} />
+        <img className='footer-logo' src={footer.logo} alt='DIE VIER BEIDEN Logo'/>
         <div className='footer-contact-container'>
           <a href={`mailto:${footer.email}`}>{footer.email}</a>
           <a href={`tel:${data.footer.phone}`}>{footer.phone}</a>
