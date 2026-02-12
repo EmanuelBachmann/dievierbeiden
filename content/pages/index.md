@@ -2,9 +2,9 @@
 title: Home
 content_blocks:
   - _bookshop_name: global/hero
-    background_image: /uploads/d4b-hero.jpg
-    background_image_tablet: /uploads/d4b-hero-tablet.jpg
-    background_image_mobile: /uploads/d4b-hero-mobile.jpg
+    background_image: /uploads/d4b.jpg
+    background_image_tablet: /uploads/d4b-tablet.jpg
+    background_image_mobile: /uploads/d4b-mobile.jpg
     background_image_alt: DIE VIER BEIDEN
     anchor: ''
   - _bookshop_name: global/introduction

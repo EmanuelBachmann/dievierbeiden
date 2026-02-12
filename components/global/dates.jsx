@@ -42,7 +42,7 @@ export default function Dates({ block, dataBinding }) {
                       isFirst ? 'is-first' : isLast ? 'is-last' : ''
                     }`}
                   >
-                    <img src={block.icon} alt='Logo Datum' />
+                    <img src={block.icon} alt='D4B Logo Gold' />
                   </div>
                   <motion.div
                     // key={'motion-' + index}
