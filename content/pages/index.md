@@ -73,7 +73,7 @@ content_blocks:
       Du willst uns live erleben?<br>Hier findest du unsere nächsten Auftritte.<br>Komm vorbei, hör rein und feier mit uns – wir freuen uns über bekannte und neue Gesichter.
     icon: /uploads/d4b_logo_quadrat_gold_transparent_icon.png
     dates:
-      - title: Frühshoppen KSK Klaus
+      - title: Frühschoppen KSK Klaus
         date: 10 MAI | ab 13:00 Uhr
         location: Klaus
         is_bohemian: true
