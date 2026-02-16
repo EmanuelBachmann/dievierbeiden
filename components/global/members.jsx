@@ -11,6 +11,18 @@ export default function Members({ block, dataBinding }) {
 
   const [members, setMembers] = useState([]);
   const [automaticMode, setAutomaticMode] = useState(true);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const runWithLock = (fn) => {
+    if (isAnimating) return;
+
+    setIsAnimating(true);
+    fn();
+
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 800);
+  };
 
   useEffect(() => {
     setMembers(
@@ -121,19 +133,25 @@ export default function Members({ block, dataBinding }) {
             <footer className='members-card-footer'>
               <button
                 onClick={() => {
-                  prevCard();
-                  setAutomaticMode(false);
+                  runWithLock(() => {
+                    prevCard();
+                    setAutomaticMode(false);
+                  });
                 }}
                 aria-label='Previous'
+                disabled={isAnimating}
               >
                 <i aria-hidden className='fa-solid fa-chevron-left'></i>
               </button>
               <button
                 onClick={() => {
-                  nextCard();
-                  setAutomaticMode(false);
+                  runWithLock(() => {
+                    nextCard();
+                    setAutomaticMode(false);
+                  });
                 }}
                 aria-label='Next'
+                disabled={isAnimating}
               >
                 <i aria-hidden className='fa-solid fa-chevron-right'></i>
               </button>
