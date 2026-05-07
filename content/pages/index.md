@@ -98,10 +98,19 @@ content_blocks:
         date: 8 AUG | ab 19:00 Uhr
         location: Jugenbühne Fraxern
         is_bohemian: false
+      - title: Beets and Beer Bludenz
+        date: 20 AUG | ab 18:00 Uhr
+        location: Bludenz, Rathausgasse
+        link: https://www.bludenz-events.at/events/beats-beer-live-mit-dabado-copy/
+        is_bohemian: false
       - title: Bärger Weinnacht
         date: 22 AUG | ab 21:00 Uhr
         location: Bartholomäberg
         is_bohemian: false
+      - title: Fahrzeugsegnung Feuerwehr Tosters
+        date: 18 Okt | ab 11:00 Uhr
+        location: Feldkirch, Tosters
+        is_bohemian: true
     anchor: termine
   - _bookshop_name: global/socialmedia
     title: Folgst du uns schon?

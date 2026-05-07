@@ -15,6 +15,7 @@ export default function Counter({ block, dataBinding }) {
                   enableScrollSpy
                   formattingFn={(val) =>
                     val.toLocaleString('de-DE', {
+                      useGrouping: false,
                       minimumFractionDigits: 0,
                       maximumFractionDigits: 0,
                     })
