@@ -11,9 +11,12 @@ content_blocks:
     title: DIE VIER BEIDEN
     text_top: >-
       Wir sind DIE VIER BEIDEN - eine junge Partyband aus dem Ländle.<br><br>
-      Wir machen Live-Musik für Feste, die man nicht vergisst – und sorgen von der ersten Nummer bis zur letzten Zugabe für gute Laune, volle Tanzflächen und beste Stimmung.
+      Wir machen Live-Musik für Feste, die man nicht vergisst – und sorgen von
+      der ersten Nummer bis zur letzten Zugabe für gute Laune, volle Tanzflächen
+      und beste Stimmung.
     text_bottom: >-
-      Egal ob gemütlich oder ausgelassen – wir spielen nicht einfach ein Programm, wir begleiten euer Fest.
+      Egal ob gemütlich oder ausgelassen – wir spielen nicht einfach ein
+      Programm, wir begleiten euer Fest.
     image: /uploads/d4b-szene.jpg
     image_alt: Szene 2025
     anchor: die_vier_beiden
@@ -29,7 +32,10 @@ content_blocks:
   - _bookshop_name: global/members
     title: Das sind wir
     text: >-
-      Wir sind acht Musiker und eine Sängerin im Alter zwischen 18 und 29 Jahren und kommen aus ganz Vorarlberg – von Hörbranz bis Bludenz. <br>Uns verbindet die Leidenschaft für Musik und die Freude daran, mit echter Energie auf der Bühne zu stehen.
+      Wir sind acht Musiker und eine Sängerin im Alter zwischen 18 und 29 Jahren
+      und kommen aus ganz Vorarlberg – von Hörbranz bis Bludenz. <br>Uns
+      verbindet die Leidenschaft für Musik und die Freude daran, mit echter
+      Energie auf der Bühne zu stehen.
     members:
       - name: Emanuel Bachmann
         instrument: Trompete
@@ -62,7 +68,11 @@ content_blocks:
   - _bookshop_name: global/bohemian
     title: Böhmische Formation
     text: >-
-      Neben unserem vielseitigen modernen Programm gibt es DIE VIER BEIDEN auch als reine böhmische Formation. In dieser Besetzung spielen wir zu acht.<br><br>Mit Marsch, Polka und der ein oder anderen modernen Nummer ist diese Variante perfekt geeignet für Frühschoppen und andere traditionellere Veranstaltungen.
+      Neben unserem vielseitigen modernen Programm gibt es DIE VIER BEIDEN auch
+      als reine böhmische Formation. In dieser Besetzung spielen wir zu
+      acht.<br><br>Mit Marsch, Polka und der ein oder anderen modernen Nummer
+      ist diese Variante perfekt geeignet für Frühschoppen und andere
+      traditionellere Veranstaltungen.
     background_image: /uploads/kilbi_mobile.jpg
     button_text: Buchen
     button_link: '#'
@@ -70,7 +80,9 @@ content_blocks:
   - _bookshop_name: global/dates
     title: Termine
     text: >-
-      Du willst uns live erleben?<br>Hier findest du unsere nächsten Auftritte.<br>Komm vorbei, hör rein und feier mit uns – wir freuen uns über bekannte und neue Gesichter.
+      Du willst uns live erleben?<br>Hier findest du unsere nächsten
+      Auftritte.<br>Komm vorbei, hör rein und feier mit uns – wir freuen uns
+      über bekannte und neue Gesichter.
     icon: /uploads/d4b_logo_quadrat_gold_transparent_icon.png
     dates:
       - title: Frühschoppen KSK Klaus
@@ -98,7 +110,7 @@ content_blocks:
         date: 8 AUG | ab 19:00 Uhr
         location: Jugenbühne Fraxern
         is_bohemian: false
-      - title: Beets and Beer Bludenz
+      - title: Beats and Beer Bludenz
         date: 20 AUG | ab 18:00 Uhr
         location: Bludenz, Rathausgasse
         link: https://www.bludenz-events.at/events/beats-beer-live-mit-dabado-copy/
@@ -118,7 +130,10 @@ content_blocks:
   - _bookshop_name: global/contact
     title: Kontakt
     text: >-
-      Dein Fest. Unsere Musik. Du planst ein Zeltfest, einen Geburtstag, ein Frühschoppen oder eine andere Feier?<br>Ob große Bühne oder kleines Fest – wir passen uns an und fühlen uns überall wohl, wo echte Stimmung gefragt ist.<br>Schreib uns einfach und erzähl uns von deinem Event. 
+      Dein Fest. Unsere Musik. Du planst ein Zeltfest, einen Geburtstag, ein
+      Frühschoppen oder eine andere Feier?<br>Ob große Bühne oder kleines Fest –
+      wir passen uns an und fühlen uns überall wohl, wo echte Stimmung gefragt
+      ist.<br>Schreib uns einfach und erzähl uns von deinem Event. 
     contact_id: dievierbeiden-contact
     anchor: kontakt
     success_message: Danke für Ihre Kontaktanfrage. Wir werden uns bald bei Ihnen melden.
@@ -140,8 +155,12 @@ content_blocks:
   - _bookshop_name: global/setlist
     title: Setlist
     text: >-
-      Unsere Setlist ist so vielseitig wie unsere Auftritte: Von A wie „A Sky full of Stars“ bis Z wie „Zombie“. Von mitreißenden Klassikern bis zu rockigen und modernen Party-Nummern – zum Mitsingen, Tanzen und Feiern.<br><br>
-      Je nach Anlass, Stimmung und Besetzung stellen wir das Programm individuell zusammen – damit es für euch und eure Gäste genau passt.
+      Unsere Setlist ist so vielseitig wie unsere Auftritte: Von A wie „A Sky
+      full of Stars“ bis Z wie „Zombie“. Von mitreißenden Klassikern bis zu
+      rockigen und modernen Party-Nummern – zum Mitsingen, Tanzen und
+      Feiern.<br><br> Je nach Anlass, Stimmung und Besetzung stellen wir das
+      Programm individuell zusammen – damit es für euch und eure Gäste genau
+      passt.
     button_text: Download
     setlist: /uploads/d4b_setlist.PDF
     anchor: setlist
